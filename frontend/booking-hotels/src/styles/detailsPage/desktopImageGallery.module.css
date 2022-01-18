@@ -1,0 +1,138 @@
+.galleryContainer {
+  display: none;
+}
+.galleryContainer p {
+  font-size: 1rem;
+  color: var(--secondary-color);
+  font-weight: 500;
+}
+.galleryMobileContainer {
+  display: none;
+}
+.imagesContainer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* grid-template-rows: repeat(2, 1fr); */
+  grid-column-gap: 0.6rem;
+  grid-row-gap: 0.5rem;
+  grid-template-rows: 200px 200px;
+}
+
+.imgLarge {
+  grid-area: 1 / 1 / 3 / 3;
+  /* height: 400px; */
+}
+.imgSmall1 {
+  grid-area: 1 / 3 / 2 / 4;
+}
+.imgSmall2 {
+  grid-area: 1 / 4 / 2 / 5;
+}
+.imgSmall3 {
+  grid-area: 2 / 3 / 3 / 4;
+}
+.imgSmall4 {
+  grid-area: 2 / 4 / 3 / 5;
+}
+.imgSmall1,
+.imgSmall2,
+.imgSmall3,
+.imgSmall4 {
+  /* height: 200px; */
+}
+
+.imgLarge img,
+.imgSmall1 img,
+.imgSmall2 img,
+.imgSmall3 img,
+.imgSmall4 img {
+  border-radius: 0.8rem;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Desktop */
+
+@media (min-width: 1200px) {
+  .atenuarFondoHidden {
+    visibility: hidden;
+    transition: visibility 300ms, opacity 300ms ease-in-out;
+  }
+
+  .atenuarFondoShow {
+    display: flex;
+    visibility: visible;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: calc(100vh);
+    width: 100%;
+    background-color: rgba(56, 59, 88, 0.9);
+    z-index: 1;
+    opacity: 1;
+    transition: visibility 0s, opacity 300ms ease-in-out;
+  }
+
+  .galleryContainer {
+    display: initial;
+  }
+
+  .imagesContainer {
+    position: relative;
+  }
+  .imagesContainer button {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    z-index: 0;
+  }
+
+  .button {
+    background: none;
+    border: 0px;
+    cursor: pointer;
+    padding: 0;
+    width: 100px;
+  }
+  .imagesContainer p {
+    background: rgba(256, 256, 256, 0.6);
+    padding: 7px 2px;
+    border-radius: 5px;
+    box-shadow: 0 0 3px #000;
+    transition: 0.3s ease-in-out;
+  }
+  .imagesContainer p:hover {
+    background: var(--btn-hover);
+    color: var(--white);
+    text-shadow: 0 0 3px #000;
+  }
+
+  .imagesContainer p:active {
+    background: var(--btn-active);
+  }
+
+  /* Galería versión mobile, cuando se clickea el "Ver más" en la galería versión Desktop */
+  .galleryContainerShow {
+    position: relative;
+    /* visibility: visible; */
+  }
+  .galleryContainerHidden {
+    visibility: hidden;
+  }
+  .closeIcon {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--white);
+    position: absolute;
+    top: 155px;
+    right: 15px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+  }
+  .closeIcon:hover {
+    color: var(--primary-color);
+  }
+}

@@ -1,0 +1,22 @@
+.swal2-container.swal2-backdrop-show {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.swal2-popup {
+  padding: 0 0 2em;
+}
+
+.swal2-loader {
+  border-color: var(--primary-color) transparent var(--primary-color)
+    transparent;
+}
+
+.swal2-timer-progress-bar-container,
+.swal2-timer-progress-bar {
+  height: 0.5em;
+}
+
+.swal2-timer-progress-bar {
+  background-color: var(--primary-color);
+  opacity: 0.5;
+}

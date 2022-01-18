@@ -1,0 +1,4 @@
+INSERT INTO `digital_booking_db`.`categorias`(Titulo, Descripcion, URL_Imagen) VALUES('Hoteles', 'Los mejores hoteles del mundo para tus próximas vacaciones', 'https://imagenes-categorias.s3.amazonaws.com/hotel.png');
+INSERT INTO `digital_booking_db`.`categorias`(Titulo, Descripcion, URL_Imagen) VALUES('Hostels', 'Los mejores hostels para pagar la mitad por el doble de diversión', 'https://imagenes-categorias.s3.amazonaws.com/hostel.png');
+INSERT INTO `digital_booking_db`.`categorias`(Titulo, Descripcion, URL_Imagen) VALUES('Departamentos', 'Los mejores departamentos disponibles para tu siguiente escapada', 'https://imagenes-categorias.s3.amazonaws.com/departamento.png');
+INSERT INTO `digital_booking_db`.`categorias`(Titulo, Descripcion, URL_Imagen) VALUES('Bed and Breakfast', 'Los mejores B&B para un descanso gratificante a un precio razonable', 'https://imagenes-categorias.s3.amazonaws.com/bed-and-breakfast.png');

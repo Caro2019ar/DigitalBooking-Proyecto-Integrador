@@ -1,0 +1,16 @@
+.icon {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+  
+  .banIcon {
+    color: var(--dark-red);
+  }
+  
+  /* Tablet */
+
+@media (min-width: 768px) {
+  .modalContainer{
+    height: 100%;
+  }
+}

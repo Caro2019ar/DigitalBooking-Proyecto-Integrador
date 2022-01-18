@@ -1,0 +1,373 @@
+/* **************** formato mobile **************** */
+
+/* boton hamburguesa */
+
+.btnMenu {
+  width: auto;
+  padding: 10px 15px;
+  margin-right: 5px;
+  font-size: 1.3rem;
+  background: none;
+  border-style: none;
+}
+.btnMenu:hover {
+  background: var(--white);
+  text-shadow: none;
+}
+.btnMenu:active {
+  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
+}
+.atenuar-fondo-hidden {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: visibility 300ms, opacity 300ms ease-in-out;
+  z-index: 150;
+}
+
+.atenuar-fondo-show {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s, opacity 300ms ease-in-out;
+}
+
+/* menu */
+
+.menu {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 0vw;
+  overflow: hidden;
+  height: 100vh;
+  background: var(--white);
+  transition: 300ms;
+  transition-timing-function: ease-in-out;
+  z-index: 200;
+}
+
+.menu.show {
+  display: inherit;
+  width: 73vw;
+  transition: 300ms;
+  transition-timing-function: ease-in-out;
+}
+
+/* header menu */
+
+.menuHeader {
+  height: 24vh;
+  background: var(--primary-color);
+  padding: 0.5rem 5%;
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.btnClose i {
+  font-size: 1.5rem;
+}
+.btnClose i:active {
+  text-shadow: 1px 1px 3px var(--shadow-primary-color);
+}
+.btnCloseSession {
+  display: none;
+  font-size: 1.2rem;
+  color: var(--secondary-color);
+  cursor: pointer;
+}
+.textMenu {
+  text-align: end;
+  font-size: 1.1rem;
+}
+
+/* header menu usuario logueado */
+
+.headerLoggedIn {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  align-items: flex-end;
+}
+
+.avatar {
+  height: 40px;
+  min-width: 40px;
+  color: var(--secondary-light);
+  background: var(--white);
+  border-radius: 50%;
+  font-weight: bold;
+  text-align: center;
+  line-height: 40px;
+  font-size: 1.3rem;
+}
+
+.hello {
+  font-size: 1rem;
+  margin-bottom: 0;
+  text-align: right;
+}
+
+.userName {
+  font-size: 1rem;
+  color: var(--secondary-color);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 0;
+  white-space: nowrap;
+}
+
+/* body menu */
+
+.menuBody {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  height: 76vh;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.link {
+  list-style-type: none;
+  text-align: right;
+  width: 100%;
+}
+
+.btnLinkMenu {
+  display: block;
+  padding: 15px 5% 13px 0;
+  width: 100%;
+  color: var(--secondary-color);
+  white-space: nowrap; /* Para que no se mueva el texto mientras se abre/cierra el menú */
+}
+.favoriteHeader,
+.bookingHeader,
+.scoreHeader,
+.adminHeader,
+.verticalLine {
+  display: none;
+}
+.btnLinkMenu:active {
+  color: var(--gray);
+}
+.borde {
+  border: 1px solid var(--secondary-light);
+  width: 92%;
+  margin: auto;
+}
+
+.favorite {
+  text-align: right;
+  margin-bottom: auto;
+}
+/* logout */
+
+.menu4 {
+  justify-content: flex-end;
+  color: var(--secondary-color);
+  font-size: 0.75rem;
+  font-weight: 500;
+  height: 86%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.menu4 span {
+  color: var(--primary-color);
+}
+
+.logout {
+  align-self: flex-end;
+  margin-right: 5%;
+  margin-bottom: 3px;
+  white-space: nowrap;
+}
+
+.bordeLogout {
+  border: 1px solid var(--secondary-light);
+  width: 90%;
+  margin: 8px auto;
+}
+
+/* redes */
+
+.iconoRedes {
+  display: flex;
+  margin-right: 0.45rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.iconoRedes i {
+  color: var(--secondary-color);
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+/* ************** formato tablet **************** */
+@media (min-width: 768px) {
+  /*ocultar todo lo que no se usa*/
+  .btnMenu,
+  .borde,
+  .bordeLogout,
+  .iconoRedes,
+  .btnClose.hidden {
+    display: none;
+  }
+
+  .favoriteIcon {
+    display: block;
+  }
+  .verticalLine {
+    display: block;
+  }
+  .btnCloseSession.show {
+    display: inherit;
+    transition: 0.3s ease-in-out;
+    margin-right: 10px;
+    position: absolute;
+    top: 5px;
+    right: 4px;
+  }
+
+  .btnCloseSession.show:hover {
+    color: var(--gray);
+  }
+
+  /* formato dentro del header */
+  .menu {
+    width: 90vw;
+    position: relative;
+    height: 100%;
+  }
+
+  /* nav para usuario no logueado */
+
+  .menuHeader.hidden {
+    display: none;
+  }
+
+  .menuBody {
+    height: auto;
+  }
+
+  .link {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 10px;
+    height: 35px;
+    margin-right: 10px;
+  }
+
+  .verticalLine {
+    width: 3px;
+    height: 45px;
+    border: 1px solid var(--primary-color);
+    background: var(--primary-color);
+    margin: 0 20px 0 10px;
+  }
+  .menuLink {
+    font-size: 0.9rem;
+    width: 135px;
+    border-radius: 5px;
+    border: 1px solid var(--primary-color);
+  }
+
+  .btnLinkMenu {
+    color: var(--primary-color);
+    height: 100%;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease-in-out;
+  }
+  .btnLinkMenu:hover {
+    color: var(--white);
+    background: var(--primary-color);
+    text-shadow: 0 0 4px rgb(8, 85, 81);
+  }
+  .btnLinkMenu:active {
+    color: var(--white);
+    background: var(--btn-active);
+    text-shadow: 0 0 4px rgb(8, 85, 81);
+  }
+
+  /* nav usuario logueado */
+  .menuBody.hidden {
+    display: none;
+  }
+
+  .btnClose {
+    color: var(--secondary-color);
+    transition: 0.3s ease-in-out;
+  }
+  .btnClose:hover {
+    color: var(--white);
+    background: var(--secondary--color);
+  }
+
+  .menuHeader {
+    height: auto;
+    align-items: flex-end;
+    background: none;
+    padding-right: 1rem;
+    justify-content: center;
+  }
+
+  .avatar {
+    background: var(--secondary-color);
+    color: var(--white);
+    margin-right: 15px;
+  }
+
+  .headerLoggedIn {
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 0px;
+  }
+
+  .hello {
+    text-align: left;
+    color: var(--secondary-light);
+  }
+
+  .userName {
+    color: var(--primary-color);
+  }
+  .favoriteIcon {
+    color: var(--secondary-color);
+    margin: 5px 1px 5px 25px;
+    font-size: 1.2rem;
+    width: 32px;
+    text-align: center;
+    padding: 3px;
+    padding-top: 5px;
+    border-radius: 50%;
+  }
+  .favoriteIcon:hover {
+    color: var(--white);
+    transition: 0.3s ease-in-out;
+    background: red;
+  }
+}
+
+/* **************** Formato Desktop **************** */
+@media (min-width: 1200px) {
+  .menu {
+    width: 70vw;
+  }
+  .menuHeader {
+    height: 80px;
+  }
+}

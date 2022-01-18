@@ -1,0 +1,8 @@
+- Se corrigió el diagrama del Sprint I para cumplir con el requisito de una infraestructura de alta disponibildad y redundancia.
+
+- Se realizó el diagrama de la infraestructura que vamos a utilizar para desplegar la aplicación durante la realización del proyecto.
+
+- Por ahora el Bucket S3 sólo contiene las imágenes de las Categorías.
+
+- El pipeline de Jenkins realiza el Build & Deploy exitosamente.
+

@@ -1,0 +1,169 @@
+.container {
+  background-color: var(--background-gray);
+  color: var(--secondary-light);
+  display: flex;
+  padding: 0.8rem 1rem;
+  align-items: center;
+}
+
+.textLocationContainer,
+.reviewContainer {
+  display: flex;
+  width: 50%;
+}
+
+.textLocationContainer {
+  grid-gap: 0.4rem;
+}
+
+.textBox h4:last-child {
+  display: none;
+}
+
+.reviewContainer {
+  justify-content: flex-end;
+  align-items: center;
+  grid-gap: 1rem;
+}
+
+.scoreContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.scoreContainer ul {
+  list-style-type: none;
+}
+
+.reviewContainer span {
+  height: 40px;
+  width: 45px;
+  color: var(--white);
+  background: var(--secondary-light);
+  border-radius: 0.6rem;
+  font-weight: bold;
+  text-align: center;
+  line-height: 40px;
+  font-size: 1.3rem;
+}
+
+.starsContainer {
+  display: flex;
+}
+
+.starIconContainer {
+  color: var(--light-gray-2);
+  opacity: 0.8;
+}
+
+.starIcon {
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+.starIconContainerVoted {
+  color: var(--primary-color);
+  opacity: 1;
+}
+
+.borrarVotoLeft {
+  display: none;
+}
+
+.borrarVotoBottom {
+  font-size: 0.8rem;
+  padding: 3px;
+  padding-bottom: 0px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.cantidadVotos {
+  display: none;
+  margin-left: -10px;
+  font-size: 0.87rem;
+}
+
+.hide {
+  display: none;
+}
+
+.sinUsuario {
+  pointer-events: none;
+}
+
+
+/* Tablet */
+
+@media (min-width: 768px) {
+
+  .container {
+    padding: 1rem 1.4rem;
+    /*align-items: flex-start;*/
+  }
+
+  .borrarVotoBottom {
+    display: none;
+  }
+
+  .borrarVotoLeft {
+    display: block;
+    font-size: 0.8rem;
+    align-self: flex-end;
+    padding: 3px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  .cantidadVotos {
+    display: block;
+    margin-left: -10px;
+    font-size: 0.87rem;
+  }
+
+  .hide {
+    display: none;
+  }
+
+}
+
+
+/* Desktop */
+
+@media (min-width: 1200px) {
+
+  .container {
+    padding: 1rem 3rem;
+  }
+
+  .textLocationContainer h4 {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  .scoreContainer h4 {
+    font-weight: 700;
+  }
+
+  .textBox h4:last-child {
+    display: initial;
+  }
+
+  .starsContainer:hover .starIconContainer {
+    color: var(--primary-color);
+    opacity: 0.6; 
+  }
+  
+  .starIconContainer:hover,
+  .starIconContainer:hover ~ .starIconContainer {
+    color: var(--light-gray-2);
+    opacity: 0.8;
+  }
+
+  .borrarVoto:hover {
+    opacity: 0.6;
+  }
+
+}

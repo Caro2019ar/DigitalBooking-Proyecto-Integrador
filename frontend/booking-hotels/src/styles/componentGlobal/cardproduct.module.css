@@ -1,0 +1,351 @@
+.productsCardContainer {
+  background-color: #e5e5e5;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+  flex-grow: 1;
+}
+
+.productsCardContainer > h2 {
+  margin: 0 0 1rem 2.9%;
+  font-weight: bold;
+}
+
+.productsCardContainer > h2,
+.cardText,
+.scoreResultsContainer > h4,
+.headerIcon {
+  color: var(--secondary-color);
+}
+
+.cardContainer {
+  margin: 0 2.95% 0 2.95%;
+  display: flex;
+  grid-gap: 2em;
+  flex-direction: column;
+  border-radius: 10%;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 11px;
+  width: 100%;
+  flex-direction: column;
+  background-color: var(--white);
+}
+
+.card:hover ~ img {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.alineacionCantidadImpar {
+  display: none;
+}
+
+.cardImage {
+  width: 100%;
+  height: 230px;
+  position: relative;
+}
+
+.favoriteIconYes,
+.favoriteIconNo {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  padding: 8px 9px 7px 9px;
+  font-size: 21px;
+  cursor: pointer;
+}
+
+.favoriteIconNo {
+  color: var(--white);
+}
+
+.favoriteIconNo:hover {
+  color: rgb(229, 229, 229);
+}
+
+.favoriteIconYes {
+  color: var(--red);
+}
+
+@keyframes like-heart-animation {
+  0% {
+    transform: scale(0);
+  }
+  15% {
+    transform: scale(1.5);
+  }
+  30% {
+    transform: scale(0.95);
+  }
+  45%,
+  80% {
+    transform: scale(1);
+  }
+}
+
+.favoriteIconYesOnClick {
+  animation-duration: 1250ms;
+  animation-name: like-heart-animation;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease-in-out;
+}
+
+.cardImage a img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.iconContainer {
+  position: absolute;
+  right: 6%;
+  margin: 12px 0;
+  font-size: 1.3rem;
+}
+
+.cardText {
+  display: flex;
+  padding: 1em;
+  width: 100%;
+  font-size: 1.2rem;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cardText p {
+  font-size: 0.75rem;
+}
+
+.cardText h4 {
+  color: var(--gray);
+  font: 1rem Quicksand;
+  font-weight: 600;
+}
+
+.reviewContainer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.scoreTitleContainer {
+  width: 80%;
+}
+
+.scoreContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.scoreContainer,
+.locationContainer {
+  gap: 0.5rem;
+}
+
+.scoreContainer ul {
+  list-style-type: none;
+}
+
+.starContainer {
+  display: flex;
+}
+
+.starIcon {
+  color: var(--primary-color);
+  font-size: 0.8rem;
+}
+
+.scoreResultsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 20%;
+}
+
+.scoreResultsContainer span {
+  height: 30px;
+  width: 40px;
+  color: var(--white);
+  background: var(--secondary-light);
+  border-radius: 0.6rem;
+  font-weight: bold;
+  line-height: 30px;
+}
+
+.scoreResultsContainer p {
+  font-size: 1.25rem;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+}
+
+.scoreResultsContainer h3 {
+  font: 0.86rem Roboto;
+  font-weight: 700;
+}
+
+.locationContainer {
+  display: flex;
+  align-items: center;
+}
+
+.locationContainer p {
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.locationContainer a p,
+.descriptionContainer p {
+  font-weight: 500;
+  line-height: 1rem;
+}
+
+.locationContainer a p {
+  margin: 0.5rem 0;
+}
+
+.descriptionContainer p {
+  margin-top: 1rem;
+}
+.datesContainer {
+  display: flex;
+  flex-direction: column;
+}
+.dateRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.datesContainer h3 {
+  font-size: 1rem;
+  color: var(--gray-lead);
+}
+
+.verticalLine {
+  border-color: var(--background);
+  margin: 4px auto;
+  border-width: 2px 0 0 0;
+  width: 100%;
+}
+
+.headerIcon {
+  font-size: 1rem;
+}
+
+.featuresIcon {
+  display: none;
+}
+
+.locationContainer span a p {
+  color: var(--primary-color);
+}
+
+.locationContainer span a p:hover {
+  font-weight: bold;
+  font-size: 0.76rem;
+}
+
+.cardProductButtonContainer {
+  margin-top: 1rem;
+}
+
+/* Tablet */
+
+@media (min-width: 768px) {
+  .card {
+    flex-direction: row;
+    height: 315px;
+  }
+
+  .cardImage {
+    height: auto;
+  }
+
+  .cardImage a img {
+    border-radius: 10px 0 0 10px;
+  }
+  .cardText {
+    justify-content: flex-start;
+  }
+  .iconContainer {
+    left: 44%;
+  }
+  .scoreResultsContainer h4 {
+    font-size: 0.8rem;
+  }
+
+  .featuresIcon {
+    display: initial;
+  }
+  .featuresIcon ul {
+    list-style-type: none;
+  }
+  .listContainer {
+    display: flex;
+    color: var(--secondary-color);
+    gap: 0.5rem;
+    font-size: 0.9rem;
+  }
+  .cardProductButtonContainer {
+    margin-top: auto;
+  }
+}
+
+/* Desktop */
+
+@media (min-width: 1200px) {
+  .productsCardContainer {
+    padding-top: 2rem;
+  }
+
+  .cardContainer {
+    flex-direction: row;
+    grid-gap: 1em;
+    justify-content: space-around;
+  }
+
+  .card {
+    width: 48%;
+  }
+
+  /* Esto es para alinear la última tarjeta cuando la cantidad es impar */
+  .alineacionCantidadImpar {
+    display: flex;
+    width: 48%;
+    content: "";
+  }
+
+  .cardImage {
+    width: 50%;
+  }
+
+  .cardText {
+    padding: 1em;
+    width: 50%;
+  }
+
+  /*.cardText h4 {
+     width: min-content;  lo comente xq dejaba muuuy fino el espacio para el titulo, no se por que motivo estaba colocado este estilo??
+  }*/
+
+  .scoreContainer {
+    width: inherit;
+  }
+
+  .scoreContainer ul {
+    width: fit-content;
+  }
+
+  .iconContainer {
+    right: 0%;
+    left: 0;
+  }
+}

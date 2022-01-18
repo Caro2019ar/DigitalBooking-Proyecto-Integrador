@@ -1,0 +1,26 @@
+/*.card-transition-index-enter {
+    opacity: 0;
+}
+
+.card-transition-index-enter-active {
+    opacity: 1;
+    transition: opacity 0ms ease-in;
+}
+
+.card-transition-index-exit {
+    opacity: 1;
+}
+
+.card-transition-index-exit-active {
+    opacity: 0;
+    transition: opacity 0ms ease-in;
+}*/
+
+.card-transition-favorite-exit {
+    opacity: 1;
+}
+
+.card-transition-favorite-exit-active {
+    opacity: 0;
+    transition: opacity 600ms ease-in;
+}

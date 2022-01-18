@@ -1,0 +1,31 @@
+.descriptionTextContainer {
+  margin: 2rem 0;
+  padding: 0 1rem;
+}
+.descriptionTextContainer h2 {
+  font-weight: bold;
+  color: var(--secondary-color);
+  margin-right: 3rem;
+}
+
+.descriptionTextContainer p {
+  margin-top: 1rem;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .descriptionTextContainer {
+    padding: 0 1.4rem;
+  }
+}
+
+/* Desktop */
+
+@media (min-width: 1200px) {
+  .descriptionTextContainer {
+    padding: 0 3rem;
+  }
+  .descriptionTextContainer p {
+    padding-right: 2rem;
+  }
+}

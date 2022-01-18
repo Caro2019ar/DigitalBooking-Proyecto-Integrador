@@ -1,0 +1,46 @@
+.container {
+  display: flex;
+  font-size: 0.9rem;
+  width: 100%;
+  margin: 0;
+  flex-direction: column;
+  flex-wrap: wrap;
+  color: var(--secondary-light);
+}
+
+.columnContainer {
+  width: 80%;
+}
+
+.columnContainer h3 {
+  font-size: 1.2rem;
+  margin: 2rem 0;
+}
+.columnContainer ul li {
+  list-style-type: none;
+  color: var(--gray-lead);
+  font-weight: 500;
+  margin: 1rem 0;
+}
+
+/* Tablet */
+
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+  }
+  .columnContainer {
+    width: 50%;
+  }
+  .columnContainer ul {
+    padding-right: 4rem;
+  }
+}
+
+/* Desktop */
+
+@media (min-width: 1200px) {
+  .columnContainer {
+    width: 30%;
+  }
+}

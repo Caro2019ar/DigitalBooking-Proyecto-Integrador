@@ -1,0 +1,45 @@
+.galleryContainer {
+  position: relative;
+}
+.iconsContainer {
+  position: absolute;
+  top: 0;
+  color: var(--white);
+  margin: 0.8rem;
+  font-size: 1.1rem;
+  z-index: 5;
+  display: flex;
+}
+/* .iconsContainer span {
+} */
+.iconsContainer img {
+  margin-right: 0.8rem;
+  width: 1rem;
+  filter: invert(99%) sepia(1%) saturate(2%) hue-rotate(172deg) brightness(110%)
+    contrast(100%);
+}
+
+@media (min-width: 768px) {
+  .iconsContainer {
+    position: relative;
+    margin-left: 1.4rem;
+    color: var(--secondary-light);
+    font-size: 1.3rem;
+  }
+  .iconsContainer img {
+    width: 1.2rem;
+    filter: invert(34%) sepia(16%) saturate(884%) hue-rotate(197deg)
+      brightness(90%) contrast(84%);
+  }
+
+  /* Desktop */
+
+  @media (min-width: 1200px) {
+    .galleryLibraryContainer {
+      display: none;
+    }
+    .iconsContainer{
+      padding-left: 1.6rem;
+    }
+  }
+}

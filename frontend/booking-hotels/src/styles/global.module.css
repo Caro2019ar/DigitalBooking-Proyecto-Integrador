@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* font-family: 'Roboto', sans-serif; */
+/* font-family: 'Poppins', sans-serif; */
+/* font-family: Quicksand; */
+:root {
+  --background: rgb(221, 220, 220);
+  --background-gray: #f0f3f4;
+  --primary-color: #1dbeb4;
+  --primary-color-rgb: 29, 190, 180;  /* Para poder setearle el alpha con rgba */
+  --secondary-color: #383b58;
+  --secondary-light: #545776;
+  --bone-color: #f3f1ed;
+  --white: #fff;
+  --black: #000;
+  --gray: #7f7f7f;
+  --gray-lead: #4f4f50;
+  --light-gray: #f9f9f9;
+  --light-gray-2: #BEBEBE;
+  --disabled: #BEBEBE;
+  --light-red: #ffe1e1;
+  --red: #ff0000;
+  --dark-red:#B00020;
+  --btn-hover: #13d1c4;
+  --shadow-primary-color: rgb(8, 85, 81);
+  --btn-active: #169c93;
+
+  --box-shadow: 0 4px 4px var(--gray);
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.button {
+  background-color: var(--primary-color);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12);
+  border-radius: 5px;
+  color: var(--white);
+  padding: 12px 20px;
+  border: none;
+  width: 100%;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 19px;
+  text-align: center;
+  cursor: pointer;
+}
+.button:hover {
+  background: var(--btn-hover);
+  text-shadow: 0 0 4px rgb(8, 85, 81);
+}
+.button:active {
+  background: var(--btn-active);
+  text-shadow: 0 0 4px rgb(8, 85, 81);
+}
+.disabledButton {
+  pointer-events: none;
+  background-color: #CCCCCC;
+}
+.no-scroll {
+  overflow: hidden;
+}
+
+.container {
+  padding: 0 1rem;
+}
+
+
+/* Loader */
+
+.lds-hourglass-absolute {
+  position: absolute;
+  top: calc(50% - 40px);
+  left: calc(50% - 65px);
+  width: 80px;
+  height: 80px;
+}
+.lds-hourglass-relative {
+  display: inline-block;
+  position: relative;
+  margin: 75px auto;
+  padding-right: 130px;
+  width: 80px;
+  height: 80px;
+}
+.lds-hourglass-absolute:after,
+.lds-hourglass-relative:after {
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  width: 0;
+  height: 0;
+  margin: 8px;
+  box-sizing: border-box;
+  border: 60px solid var(--primary-color);
+  border-color: var(--primary-color) transparent var(--primary-color) transparent;
+  animation: lds-hourglass 1.2s infinite;
+}
+@keyframes lds-hourglass {
+  0% {
+    transform: rotate(0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  50% {
+    transform: rotate(900deg);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  100% {
+    transform: rotate(1800deg);
+  }
+}
+
+
+/* Tablet */
+
+@media (min-width: 768px) {
+  .container {
+    padding: 0 1.4rem;
+  }
+  .lds-hourglass {
+    top: 40%;
+    left: 43%;
+    }
+}
+
+
+/* Desktop */
+
+@media (min-width: 1200px) {
+  .container {
+    padding: 0 3rem;
+  }
+  
+  .lds-hourglass {
+  top: 40%;
+  left: 47%;
+  }
+}

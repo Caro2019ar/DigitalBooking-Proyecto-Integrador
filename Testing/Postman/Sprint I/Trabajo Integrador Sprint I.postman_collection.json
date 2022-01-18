@@ -1,0 +1,307 @@
+{
+	"info": {
+		"_postman_id": "47e46680-e8bb-461e-a520-20f50f5c46d1",
+		"name": "Trabajo Integrador",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Categorías",
+			"item": [
+				{
+					"name": "POST",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code igual a 201\", function () {\r",
+									"    pm.response.to.have.status(201);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Body no vacío\", function () {\r",
+									"    let data = pm.response.json();\r",
+									"    pm.expect(data).to.not.be.empty;\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Categoría con los atributos esperados\", function () {\r",
+									"    let data = pm.response.json();\r",
+									"    pm.expect(data).to.have.keys([\"id\", \"titulo\", \"descripcion\", \"urlImagen\"]);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"El ID obtenido es un número válido\", function () {\r",
+									"    let data = pm.response.json();\r",
+									"    pm.expect(data.id).to.not.be.NaN;\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"titulo\": \"Lujo\",\r\n    \"descripcion\": \"Hotel de lujo\",\r\n    \"urlImagen\": \"http://www.imagen-lujo.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/categorias",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"categorias"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET ONE",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code igual a 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Body no vacío\", function () {\r",
+									"    let data = pm.response.json();\r",
+									"    pm.expect(data).to.not.be.empty;\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Categoría con los atributos esperados\", function () {\r",
+									"    let data = pm.response.json();\r",
+									"    pm.expect(data).to.have.keys([\"id\", \"titulo\", \"descripcion\", \"urlImagen\"]);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"El ID obtenido es igual a 1\", function () {\r",
+									"    let data = pm.response.json();\r",
+									"    pm.expect(data.id).to.eql(1);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/categorias/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"categorias",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET ONE Inexistente",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code igual a 404\", function () {\r",
+									"    pm.response.to.have.status(404);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Body no vacío\", function () {\r",
+									"    let data = pm.response.text();\r",
+									"    pm.expect(data).to.not.be.empty;\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Body con texto 'no existe'\", function () {\r",
+									"    let data = pm.response.text();\r",
+									"    pm.expect(data).to.have.string('no existe');\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/categorias/9999",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"categorias",
+								"9999"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET ALL",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code igual a 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Body no vacío\", function () {\r",
+									"    let data = pm.response.json();\r",
+									"    pm.expect(data).to.not.be.empty;\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Categorías con los atributos esperados\", function () {\r",
+									"    let data = pm.response.json();\r",
+									"    pm.expect(data[0]).to.have.keys([\"id\", \"titulo\", \"descripcion\", \"urlImagen\"]);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Body con al menos 3 categorías\", function () {\r",
+									"    let data = pm.response.json();\r",
+									"    pm.expect(data).to.have.lengthOf.at.least(3);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/categorias",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"categorias"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code igual a 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Body no vacío\", function () {\r",
+									"    let data = pm.response.json();\r",
+									"    pm.expect(data).to.not.be.empty;\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Categoría con los atributos esperados\", function () {\r",
+									"    let data = pm.response.json();\r",
+									"    pm.expect(data).to.have.keys([\"id\", \"titulo\", \"descripcion\", \"urlImagen\"]);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"El ID obtenido es igual a 1\", function () {\r",
+									"    let data = pm.response.json();\r",
+									"    pm.expect(data.id).to.eql(1);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"titulo\": \"Lujo\",\r\n    \"descripcion\": \"Hotel de lujo\",\r\n    \"urlImagen\": \"http://www.imagen-lujo-renovada.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/categorias",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"categorias"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code igual a 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Body no vacío\", function () {\r",
+									"    let data = pm.response.text();\r",
+									"    pm.expect(data).to.not.be.empty;\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Body con texto 'eliminada'\", function () {\r",
+									"    let data = pm.response.text();\r",
+									"    pm.expect(data).to.have.string('eliminada');\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/categorias/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"categorias",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

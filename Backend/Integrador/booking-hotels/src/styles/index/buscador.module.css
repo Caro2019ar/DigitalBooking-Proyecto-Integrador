@@ -1,0 +1,282 @@
+.buscador {
+  padding: 12px 20px;
+  background: var(--secondary-light);
+}
+
+.buscador_container {
+  margin-top: 0.5rem;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+  padding: 5px;
+  color: var(--gray);
+  font-weight: 500;
+}
+
+.buscador_container input[type="text"] {
+  box-sizing: border-box;
+  border: 1px solid rgb(179, 179, 179);
+  /*border: var(--gray);*/
+  border-radius: 5px;
+  padding: 14px 44px 10px 44px;
+  width: 100%;
+  font-size: 1rem;
+  line-height: 1rem;
+  font-weight: 500;
+}
+
+.buscador_container .fecha_elegida {
+  color: var(--secondary-light);
+}
+
+.buscador_container input[type="text"]:focus {
+  outline: none;
+  border: 1px solid rgb(179, 179, 179);
+}
+
+/*========= Select de países y ciudades =========*/
+.select_container {
+  color: var(--gray);
+  font-weight: 500;
+  width: 100%;
+  margin: 5px 0;
+  line-height: 30px;
+  z-index: 2;     /* Para tapar el ícono del otro buscador en Mobile */
+}
+
+.select_color {
+  color: #7f7f7f;
+}
+
+.selected_city {
+  color: var(--secondary-light);
+  font-size: 1rem;
+  background-color: white;
+  border-radius: 5px;
+  width: 100%;
+  margin: 5px 0;
+  line-height: 41px;
+}
+
+.selected_icono_mapa_relleno {
+  font-size: 1.5rem;
+  color: var(--secondary-light);
+  margin-top: 14px;
+  margin-left: 13px;
+  margin-right: 14px;
+}
+
+.select_option_list {
+  display: flex;
+  height: 70px;
+}
+
+.select_option_list_caja {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid;
+  color: #1dbeb4;
+  width: 700px;
+  cursor: pointer;
+}
+
+.select_option_list_caja_pais {
+  color: black;
+  margin-left: 18px;
+}
+
+.select_option_list_caja_ciudad {
+  color: #383b58;
+  margin-left: 18px;
+  margin-top: 0px;
+}
+
+.select_icono_mapa_vacio {
+  padding-top: 15px;
+  left: 6;
+}
+
+.text_center {
+  color: var(--white);
+  text-align: center;
+}
+
+.icono_select {
+  position: absolute;
+  left: 12px;
+  color: #A9ABBB;
+  font-size: 1.5rem;
+}
+
+/* =================== Button ==================== */
+.button {
+  background-color: var(--primary-color);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12);
+  border-radius: 5px;
+  color: var(--white);
+  padding: 10px 20px;
+  border: none;
+  width: 100%;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+  margin: 5px 0;
+  cursor: pointer;
+}
+
+.span_error_message {
+  color: white;
+}
+
+/* ========= Check-in Check-out y Calendar ========= */
+.icono_calendar {
+  position: absolute;
+  top: 9px;
+  left: 10px;
+  color: #A9ABBB;
+  font-size: 1.6rem;
+  margin-right: 10px;
+  pointer-events: none;   /* Para que al clickearlo se abra el calendario */
+  z-index: 1;
+}
+
+.calendar_container {
+  position: relative;   /* Para acomodar el ícono */
+  color: var(--gray);
+  font-weight: 500;
+  margin: 5px 0;
+  width: 100%;
+}
+
+.textos_calendar {
+  color: var(--gray);
+}
+
+.calendar_checkin_out {
+  background-color: white;
+  border-radius: 5px;
+  padding: 8px;
+}
+
+.calendar_button {
+  background-color: #1dbeb4;
+  color: white;
+  cursor: pointer;
+  width: 65%;
+  min-width: 220px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.oculta {
+  display: none;
+}
+
+.span_check {
+  font-size: 1rem;
+  border: "5px solid";
+  background-color: "white";
+  border-radius: "5px";
+  width: 100%;
+  margin: 5px;
+  line-height: 28px;
+}
+
+.calendar {
+  border: 0;
+  border: 5px solid;
+  background-color: white;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+}
+
+.calendar_footer {
+  display: flex;
+  justify-content: center;
+}
+
+
+/* **************** Tablet ****************** */
+
+@media (min-width: 768px) {
+
+  .buscador_container {
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+    width: 90%;
+    gap: 0.8rem;
+    position: relative;
+  }
+
+  .select_color {
+    width: 46%;
+  }
+
+  .select_container {
+    white-space: nowrap;
+  }
+
+  .selected_city {
+    line-height: 40px;
+  }
+
+  .calendar_container {
+    width: 46%;
+  }
+
+  .calendar_checkin_out {
+    width: 100%;
+    font-size: 0.7rem;
+    white-space: nowrap;
+  }
+
+  .calendar_footer {
+    width: 100%;
+  }
+
+  .calendar_button {
+    width: 88%;
+  }
+
+  .button {
+    width: 20%;
+  }
+}
+
+
+/* **************** Desktop  ****************** */
+
+@media (min-width: 1200px) {
+
+  .selected_city {
+    white-space: nowrap;
+  }
+
+  .select_color {
+    width: 40%;
+  }
+
+  .select_container {
+    white-space: nowrap;
+  }
+
+  .calendar_container {
+    width: 40%;
+  }
+
+  .calendar_footer {
+    width: 94%;
+    justify-content: flex-end;
+  }
+
+  .calendar_button {
+    width: 25%
+  }
+
+  .button {
+    width: 20%;
+  }
+}

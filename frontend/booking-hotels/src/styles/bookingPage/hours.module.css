@@ -1,0 +1,70 @@
+.boxFormHs input,
+.boxFormHs select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+.form {
+  color: var(--secondary-color);
+  padding: 1.5rem 1rem 1rem 1rem;
+  position: relative;
+  width: 100%;
+}
+.form h5 {
+  padding: 0 0 1.5rem 2rem;
+}
+.form p {
+  font-weight: bold;
+  font-size: 0.75rem;
+}
+.form i {
+  position: absolute;
+  font-size: 1.2rem;
+  top: 25px;
+}
+.boxFormHs {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.boxFormHs select::-ms-expand {
+  display: none;
+}
+.boxFormHs i {
+  position: absolute;
+  right: 20px;
+  top: calc(50% - 7px);
+  width: 10px;
+  height: 10px;
+  display: block;
+  border-left: 2px solid var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
+  transform: rotate(-45deg);
+}
+.boxFormHs select:focus {
+  outline: none;
+  border: 1px solid rgb(179, 179, 179);
+}
+.formControl {
+  border: 1px solid var(--bone-color);
+}
+.formControl option {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: var(--secondary-color);
+}
+.formControl:required:invalid {
+  color: #a9a9a9;
+}
+.formControl option[value=""][disabled] {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .form {
+    width: 100%;
+  }
+  .boxFormHs {
+    width: 50%;
+  }
+}

@@ -1,0 +1,73 @@
+[
+  {
+    "id": "1",
+    "title": "Habitación Aérea",
+    "category": "Hotel",
+    "description": "Nequeporro cupidatat fugit. Ad consequat eaque. Corporis. Voluptas aspernatur nesciunt. Labore eum..",
+    "location": "Veracruz",
+    "img": "https://www.inoutviajes.com/fotos/20/8904_TheWestinLima-ExecutiveSuiteRoom.CrditoTheWestinLimaHotel_amp_ConventionCenter.jpg"
+  },
+
+  {
+    "id": "2",
+    "title": "Hotel Costero",
+    "category": "Bed and Breakfast",
+    "description": "Explicabo occaecat velit, velit illo. Quo. Autem quia, rem, ipsum. Eum architecto. Quasi magna anim doloremque and ipsum.",
+    "location": "Veracruz",
+    "img": "https://i2.wp.com/www.oinkoink.com.mx/wp-content/uploads/2020/01/lujos-habitaciones-2.jpg?fit=1200%2C597&ssl=1"
+  },
+
+  {
+    "id": "3",
+    "title": "Cabañas",
+    "category": "Bed and Breakfast",
+    "description": "Iste totam and numquam tempora but labore so magni. Velit inventore suscipit eu voluptate yet aspernatur.",
+    "location": "Veracruz",
+    "img": "http://agenciasanluis.com/wp-content/uploads/2013/10/hfm-habitacion.jpg"
+  },
+
+  {
+    "id": "4",
+    "title": "Hotel Céntrico",
+    "category": "Hostel",
+    "description": "Nesciunt amet nulla totam. Nemo labore quam yet veniam vel. Doloremque. Velit. Odit. Inventore modi excepteur so explicabo.",
+    "location": "Veracruz",
+    "img": "https://cdn.galaxy.tf/unit-media/tc-default/uploads/images/news_photo/001/587/662/como-se-clasifican-las-habitaciones-en-un-hotel-de-5-estrellas-en-lima-min-standard.png"
+  },
+
+  {
+    "id": "5",
+    "title": "Habitación Matrimonial",
+    "category": "Hostel",
+    "description": "Ut. Sint. Aliquam omnis commodo yet sint ab so velit. Culpa. Dolore autem laborum aute yet ullam or eum and quaerat.",
+    "location": "Veracruz",
+    "img": "https://cache.marriott.com/marriottassets/marriott/MEXCY/mexcy-king-guestroom-1449-hor-wide.jpg?interpolation=progressive-bilinear&downsize=1064px:*"
+  },
+
+  {
+    "id": "6",
+    "title": "Hotel Ejecutivo",
+    "category": "Hotel",
+    "description": "Ut proident laboriosam tempora veritatis. Tempora sunt but quisquam et dolores numquam. Molestiae sit. Ratione do.",
+    "location": "Veracruz",
+    "img": "https://media.staticontent.com/media/pictures/029d2f91-1723-4193-895d-b8a11a824f61"
+  },
+
+  {
+    "id": "7",
+    "title": "Departamentos Monoambiente",
+    "category": "Departamentos",
+    "description": "Mollit laudantium so dolorem veritatis but unde and dicta nihil. Ea dolores or doloremque commodo unde.",
+    "location": "Veracruz.",
+    "img": "https://blog.rosen.cl/hubfs/muebles%20para%20departamentos%20pequenos.jpg"
+  },
+
+  {
+    "id": "8",
+    "title": "Departamentos Familiares",
+    "category": "Departamentos",
+    "description": "Ad nisi id for minima but dicta aut or lorem. Nulla elit veniam vitae nulla. Qui eum eiusmod or corporis but dolor quo ad.",
+    "location": "Veracruz.",
+    "img": "https://d3rny71whgunfp.cloudfront.net/eyJidWNrZXQiOiJyZXNlbS1wZSIsImtleSI6IjE1ODEwMjM1NTQ1MjVfLTE2Mjg0ODUwNzguanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxMjAwLCJoZWlnaHQiOjYzMCwiZml0IjoiY292ZXIiLCJ3aXRob3V0RW5sYXJnZW1lbnQiOnRydWV9fX0="
+  }
+]

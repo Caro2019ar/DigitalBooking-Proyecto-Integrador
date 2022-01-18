@@ -1,0 +1,4892 @@
+{
+	"id": "5da1be13-2eca-43b8-a537-ada1c906b4de",
+	"name": "Trabajo Integrador",
+	"timestamp": "2021-11-04T19:22:18.178Z",
+	"collection_id": "16607330-47e46680-e8bb-461e-a520-20f50f5c46d1",
+	"folder_id": 0,
+	"environment_id": "8cdf430b-9860-4634-8ea3-4e89e1eca360",
+	"totalPass": 629,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "9d74ec31-b71a-4fcf-9ef4-16b789c78c3f",
+			"name": "POST",
+			"url": "http://localhost:8080/categorias",
+			"time": 175,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"El método es de tipo POST": true,
+				"La URL de la petición es la esperada": true,
+				"Existe la propiedad Content-Type en el encabezado de la petición y es igual a 'application/json'": true,
+				"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": true,
+				"Tiempo de respuesta menor a 200 ms": true,
+				"Status igual a '201 Created'": true,
+				"Petición con los atributos esperados": true,
+				"Tipos de datos de la petición": true,
+				"La respuesta es correcta, tiene body y es un JSON": true,
+				"Body de la respuesta no vacío": true,
+				"Respuesta con los atributos esperados": true,
+				"Tipos de datos de la respuesta": true,
+				"El ID obtenido es un número válido mayor a 0": true,
+				"Los datos recibidos son iguales a los enviados": true
+			},
+			"testPassFailCounts": {
+				"El método es de tipo POST": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La URL de la petición es la esperada": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Existe la propiedad Content-Type en el encabezado de la petición y es igual a 'application/json'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tiempo de respuesta menor a 200 ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status igual a '201 Created'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Petición con los atributos esperados": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tipos de datos de la petición": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La respuesta es correcta, tiene body y es un JSON": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body de la respuesta no vacío": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Respuesta con los atributos esperados": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tipos de datos de la respuesta": {
+					"pass": 1,
+					"fail": 0
+				},
+				"El ID obtenido es un número válido mayor a 0": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Los datos recibidos son iguales a los enviados": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				175
+			],
+			"allTests": [
+				{
+					"El método es de tipo POST": true,
+					"La URL de la petición es la esperada": true,
+					"Existe la propiedad Content-Type en el encabezado de la petición y es igual a 'application/json'": true,
+					"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": true,
+					"Tiempo de respuesta menor a 200 ms": true,
+					"Status igual a '201 Created'": true,
+					"Petición con los atributos esperados": true,
+					"Tipos de datos de la petición": true,
+					"La respuesta es correcta, tiene body y es un JSON": true,
+					"Body de la respuesta no vacío": true,
+					"Respuesta con los atributos esperados": true,
+					"Tipos de datos de la respuesta": true,
+					"El ID obtenido es un número válido mayor a 0": true,
+					"Los datos recibidos son iguales a los enviados": true
+				}
+			]
+		},
+		{
+			"id": "04f45534-9712-4336-999e-f4ed3154105a",
+			"name": "POST Con ID",
+			"url": "http://localhost:8080/categorias",
+			"time": 14,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"El método es de tipo POST": true,
+				"La URL de la petición es la esperada": true,
+				"Existe la propiedad Content-Type en el encabezado de la petición y es igual a 'application/json'": true,
+				"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": true,
+				"Tiempo de respuesta menor a 200 ms": true,
+				"Status igual a '400 Bad Request'": true,
+				"Petición con los atributos esperados": true,
+				"Tipos de datos de la petición": true,
+				"La respuesta es con error, tiene body y es un JSON": true,
+				"Body de la respuesta no vacío": true,
+				"Respuesta con los atributos esperados": true,
+				"Tipos de datos de la respuesta": true,
+				"Status con código 400": true,
+				"Error con texto 'no puede recibir un ID'": true
+			},
+			"testPassFailCounts": {
+				"El método es de tipo POST": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La URL de la petición es la esperada": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Existe la propiedad Content-Type en el encabezado de la petición y es igual a 'application/json'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tiempo de respuesta menor a 200 ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status igual a '400 Bad Request'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Petición con los atributos esperados": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tipos de datos de la petición": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La respuesta es con error, tiene body y es un JSON": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body de la respuesta no vacío": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Respuesta con los atributos esperados": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tipos de datos de la respuesta": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status con código 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error con texto 'no puede recibir un ID'": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				14
+			],
+			"allTests": [
+				{
+					"El método es de tipo POST": true,
+					"La URL de la petición es la esperada": true,
+					"Existe la propiedad Content-Type en el encabezado de la petición y es igual a 'application/json'": true,
+					"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": true,
+					"Tiempo de respuesta menor a 200 ms": true,
+					"Status igual a '400 Bad Request'": true,
+					"Petición con los atributos esperados": true,
+					"Tipos de datos de la petición": true,
+					"La respuesta es con error, tiene body y es un JSON": true,
+					"Body de la respuesta no vacío": true,
+					"Respuesta con los atributos esperados": true,
+					"Tipos de datos de la respuesta": true,
+					"Status con código 400": true,
+					"Error con texto 'no puede recibir un ID'": true
+				}
+			]
+		},
+		{
+			"id": "5ab80a4e-7cf4-42ce-837c-38a8dfb09a46",
+			"name": "GET ONE",
+			"url": "http://localhost:8080/categorias/1",
+			"time": 20,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"El método es de tipo GET": true,
+				"La URL de la petición es la esperada": true,
+				"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": true,
+				"Tiempo de respuesta menor a 200 ms": true,
+				"Status igual a '200 OK'": true,
+				"Body de la petición vacío": true,
+				"La respuesta es correcta, tiene body y es un JSON": true,
+				"Body de la respuesta no vacío": true,
+				"Respuesta con los atributos esperados": true,
+				"Tipos de datos de la respuesta": true,
+				"El ID obtenido es un número válido mayor a 0": true,
+				"El ID recibido es igual al enviado": true
+			},
+			"testPassFailCounts": {
+				"El método es de tipo GET": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La URL de la petición es la esperada": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tiempo de respuesta menor a 200 ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status igual a '200 OK'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body de la petición vacío": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La respuesta es correcta, tiene body y es un JSON": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body de la respuesta no vacío": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Respuesta con los atributos esperados": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tipos de datos de la respuesta": {
+					"pass": 1,
+					"fail": 0
+				},
+				"El ID obtenido es un número válido mayor a 0": {
+					"pass": 1,
+					"fail": 0
+				},
+				"El ID recibido es igual al enviado": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				20
+			],
+			"allTests": [
+				{
+					"El método es de tipo GET": true,
+					"La URL de la petición es la esperada": true,
+					"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": true,
+					"Tiempo de respuesta menor a 200 ms": true,
+					"Status igual a '200 OK'": true,
+					"Body de la petición vacío": true,
+					"La respuesta es correcta, tiene body y es un JSON": true,
+					"Body de la respuesta no vacío": true,
+					"Respuesta con los atributos esperados": true,
+					"Tipos de datos de la respuesta": true,
+					"El ID obtenido es un número válido mayor a 0": true,
+					"El ID recibido es igual al enviado": true
+				}
+			]
+		},
+		{
+			"id": "74ebd152-76b1-43ed-b04a-126cef2f9047",
+			"name": "GET ONE Inexistente",
+			"url": "http://localhost:8080/categorias/9999",
+			"time": 8,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"El método es de tipo GET": true,
+				"La URL de la petición es la esperada": true,
+				"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": true,
+				"Tiempo de respuesta menor a 200 ms": true,
+				"Status igual a '404 Not Found'": true,
+				"Body de la petición vacío": true,
+				"La respuesta es un error, tiene body y es un JSON": true,
+				"Body de la respuesta no vacío": true,
+				"Respuesta con los atributos esperados": true,
+				"Tipos de datos de la respuesta": true,
+				"Status con código 404": true,
+				"Error con texto 'no existe'": true
+			},
+			"testPassFailCounts": {
+				"El método es de tipo GET": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La URL de la petición es la esperada": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tiempo de respuesta menor a 200 ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status igual a '404 Not Found'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body de la petición vacío": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La respuesta es un error, tiene body y es un JSON": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body de la respuesta no vacío": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Respuesta con los atributos esperados": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tipos de datos de la respuesta": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status con código 404": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error con texto 'no existe'": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				8
+			],
+			"allTests": [
+				{
+					"El método es de tipo GET": true,
+					"La URL de la petición es la esperada": true,
+					"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": true,
+					"Tiempo de respuesta menor a 200 ms": true,
+					"Status igual a '404 Not Found'": true,
+					"Body de la petición vacío": true,
+					"La respuesta es un error, tiene body y es un JSON": true,
+					"Body de la respuesta no vacío": true,
+					"Respuesta con los atributos esperados": true,
+					"Tipos de datos de la respuesta": true,
+					"Status con código 404": true,
+					"Error con texto 'no existe'": true
+				}
+			]
+		},
+		{
+			"id": "64bdffa5-ff04-4677-8e8e-28336c444009",
+			"name": "GET ALL",
+			"url": "http://localhost:8080/categorias",
+			"time": 10,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"El método es de tipo GET": true,
+				"La URL de la petición es la esperada": true,
+				"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": true,
+				"Tiempo de respuesta menor a 200 ms": true,
+				"Status igual a '200 OK'": true,
+				"Body de la petición vacío": true,
+				"La respuesta es correcta, tiene body y es un JSON": true,
+				"Body de la respuesta no vacío": true,
+				"Respuesta es un array": true,
+				"Array con al menos 3 elementos": true,
+				"Elementos del array con los atributos esperados": true,
+				"Tipos de datos de los elementos del array": true,
+				"Los ID's obtenidos son números válidos mayores a 0": true
+			},
+			"testPassFailCounts": {
+				"El método es de tipo GET": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La URL de la petición es la esperada": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tiempo de respuesta menor a 200 ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status igual a '200 OK'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body de la petición vacío": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La respuesta es correcta, tiene body y es un JSON": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body de la respuesta no vacío": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Respuesta es un array": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Array con al menos 3 elementos": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Elementos del array con los atributos esperados": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tipos de datos de los elementos del array": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Los ID's obtenidos son números válidos mayores a 0": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				10
+			],
+			"allTests": [
+				{
+					"El método es de tipo GET": true,
+					"La URL de la petición es la esperada": true,
+					"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": true,
+					"Tiempo de respuesta menor a 200 ms": true,
+					"Status igual a '200 OK'": true,
+					"Body de la petición vacío": true,
+					"La respuesta es correcta, tiene body y es un JSON": true,
+					"Body de la respuesta no vacío": true,
+					"Respuesta es un array": true,
+					"Array con al menos 3 elementos": true,
+					"Elementos del array con los atributos esperados": true,
+					"Tipos de datos de los elementos del array": true,
+					"Los ID's obtenidos son números válidos mayores a 0": true
+				}
+			]
+		},
+		{
+			"id": "1999aeca-da4d-4e4c-a3e4-4d1e360679a3",
+			"name": "PUT",
+			"url": "http://localhost:8080/categorias",
+			"time": 15,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"El método es de tipo PUT": true,
+				"La URL de la petición es la esperada": true,
+				"Existe la propiedad Content-Type en el encabezado de la petición y es igual a 'application/json'": true,
+				"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": true,
+				"Tiempo de respuesta menor a 200 ms": true,
+				"Status igual a '200 OK'": true,
+				"Petición con los atributos esperados": true,
+				"Tipos de datos de la petición": true,
+				"La respuesta es correcta, tiene body y es un JSON": true,
+				"Body de la respuesta no vacío": true,
+				"Respuesta con los atributos esperados": true,
+				"Tipos de datos de la respuesta": true,
+				"El ID obtenido es un número válido mayor a 0 e igual al enviado": true
+			},
+			"testPassFailCounts": {
+				"El método es de tipo PUT": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La URL de la petición es la esperada": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Existe la propiedad Content-Type en el encabezado de la petición y es igual a 'application/json'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tiempo de respuesta menor a 200 ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status igual a '200 OK'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Petición con los atributos esperados": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tipos de datos de la petición": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La respuesta es correcta, tiene body y es un JSON": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body de la respuesta no vacío": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Respuesta con los atributos esperados": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tipos de datos de la respuesta": {
+					"pass": 1,
+					"fail": 0
+				},
+				"El ID obtenido es un número válido mayor a 0 e igual al enviado": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				15
+			],
+			"allTests": [
+				{
+					"El método es de tipo PUT": true,
+					"La URL de la petición es la esperada": true,
+					"Existe la propiedad Content-Type en el encabezado de la petición y es igual a 'application/json'": true,
+					"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": true,
+					"Tiempo de respuesta menor a 200 ms": true,
+					"Status igual a '200 OK'": true,
+					"Petición con los atributos esperados": true,
+					"Tipos de datos de la petición": true,
+					"La respuesta es correcta, tiene body y es un JSON": true,
+					"Body de la respuesta no vacío": true,
+					"Respuesta con los atributos esperados": true,
+					"Tipos de datos de la respuesta": true,
+					"El ID obtenido es un número válido mayor a 0 e igual al enviado": true
+				}
+			]
+		},
+		{
+			"id": "07b766f1-bb79-4117-8c4a-8d13937245a3",
+			"name": "PUT Sin ID",
+			"url": "http://localhost:8080/categorias",
+			"time": 6,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"El método es de tipo PUT": true,
+				"La URL de la petición es la esperada": true,
+				"Existe la propiedad Content-Type en el encabezado de la petición y es igual a 'application/json'": true,
+				"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": true,
+				"Tiempo de respuesta menor a 200 ms": true,
+				"Status igual a '400 Bad Request'": true,
+				"Petición con los atributos esperados": true,
+				"Tipos de datos de la petición": true,
+				"La respuesta es con error, tiene body y es un JSON": true,
+				"Body de la respuesta no vacío": true,
+				"Respuesta con los atributos esperados": true,
+				"Tipos de datos de la respuesta": true,
+				"Status con código 400": true,
+				"Error con texto 'no puede recibir un ID'": true
+			},
+			"testPassFailCounts": {
+				"El método es de tipo PUT": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La URL de la petición es la esperada": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Existe la propiedad Content-Type en el encabezado de la petición y es igual a 'application/json'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tiempo de respuesta menor a 200 ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status igual a '400 Bad Request'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Petición con los atributos esperados": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tipos de datos de la petición": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La respuesta es con error, tiene body y es un JSON": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body de la respuesta no vacío": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Respuesta con los atributos esperados": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tipos de datos de la respuesta": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status con código 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error con texto 'no puede recibir un ID'": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				6
+			],
+			"allTests": [
+				{
+					"El método es de tipo PUT": true,
+					"La URL de la petición es la esperada": true,
+					"Existe la propiedad Content-Type en el encabezado de la petición y es igual a 'application/json'": true,
+					"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": true,
+					"Tiempo de respuesta menor a 200 ms": true,
+					"Status igual a '400 Bad Request'": true,
+					"Petición con los atributos esperados": true,
+					"Tipos de datos de la petición": true,
+					"La respuesta es con error, tiene body y es un JSON": true,
+					"Body de la respuesta no vacío": true,
+					"Respuesta con los atributos esperados": true,
+					"Tipos de datos de la respuesta": true,
+					"Status con código 400": true,
+					"Error con texto 'no puede recibir un ID'": true
+				}
+			]
+		},
+		{
+			"id": "34524c3b-29f2-41aa-8c5a-c70ade1f5338",
+			"name": "DELETE Exitoso",
+			"url": "http://localhost:8080/categorias/4",
+			"time": 26,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"El método es de tipo DELETE": true,
+				"La URL de la petición es la esperada": true,
+				"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": true,
+				"Tiempo de respuesta menor a 200 ms": true,
+				"Status igual a '200 OK'": true,
+				"Body de la petición vacío": true,
+				"La respuesta es correcta, tiene body y es un JSON": true,
+				"Body de la respuesta no vacío": true,
+				"Respuesta con los atributos esperados": true,
+				"Tipos de datos de la respuesta": true,
+				"Mensaje con texto 'eliminada correctamente'": true
+			},
+			"testPassFailCounts": {
+				"El método es de tipo DELETE": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La URL de la petición es la esperada": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tiempo de respuesta menor a 200 ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status igual a '200 OK'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body de la petición vacío": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La respuesta es correcta, tiene body y es un JSON": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body de la respuesta no vacío": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Respuesta con los atributos esperados": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tipos de datos de la respuesta": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Mensaje con texto 'eliminada correctamente'": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				26
+			],
+			"allTests": [
+				{
+					"El método es de tipo DELETE": true,
+					"La URL de la petición es la esperada": true,
+					"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": true,
+					"Tiempo de respuesta menor a 200 ms": true,
+					"Status igual a '200 OK'": true,
+					"Body de la petición vacío": true,
+					"La respuesta es correcta, tiene body y es un JSON": true,
+					"Body de la respuesta no vacío": true,
+					"Respuesta con los atributos esperados": true,
+					"Tipos de datos de la respuesta": true,
+					"Mensaje con texto 'eliminada correctamente'": true
+				}
+			]
+		},
+		{
+			"id": "2bd5929f-db1b-408a-ac65-7a82ca93cbda",
+			"name": "DELETE Inexistente",
+			"url": "http://localhost:8080/categorias/9999",
+			"time": 6,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"El método es de tipo DELETE": true,
+				"La URL de la petición es la esperada": true,
+				"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": true,
+				"Tiempo de respuesta menor a 200 ms": true,
+				"Status igual a '404 Not Found'": true,
+				"Body de la petición vacío": true,
+				"La respuesta es errónea, tiene body y es un JSON": true,
+				"Body de la respuesta no vacío": true,
+				"Respuesta con los atributos esperados": true,
+				"Tipos de datos de la respuesta": true,
+				"Status con código 404": true,
+				"Error con texto 'no existe'": true
+			},
+			"testPassFailCounts": {
+				"El método es de tipo DELETE": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La URL de la petición es la esperada": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tiempo de respuesta menor a 200 ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status igual a '404 Not Found'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body de la petición vacío": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La respuesta es errónea, tiene body y es un JSON": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body de la respuesta no vacío": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Respuesta con los atributos esperados": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tipos de datos de la respuesta": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status con código 404": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error con texto 'no existe'": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				6
+			],
+			"allTests": [
+				{
+					"El método es de tipo DELETE": true,
+					"La URL de la petición es la esperada": true,
+					"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": true,
+					"Tiempo de respuesta menor a 200 ms": true,
+					"Status igual a '404 Not Found'": true,
+					"Body de la petición vacío": true,
+					"La respuesta es errónea, tiene body y es un JSON": true,
+					"Body de la respuesta no vacío": true,
+					"Respuesta con los atributos esperados": true,
+					"Tipos de datos de la respuesta": true,
+					"Status con código 404": true,
+					"Error con texto 'no existe'": true
+				}
+			]
+		},
+		{
+			"id": "71852842-86a8-43fd-aead-0db263f6aa92",
+			"name": "POST",
+			"url": "http://localhost:8080/ciudades",
+			"time": 9,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"El método es de tipo POST": true,
+				"La URL de la petición es la esperada": true,
+				"Existe la propiedad Content-Type en el encabezado de la petición y es igual a 'application/json'": true,
+				"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": true,
+				"Tiempo de respuesta menor a 200 ms": true,
+				"Status igual a '201 Created'": true,
+				"Petición con los atributos esperados": true,
+				"Tipos de datos de la petición": true,
+				"La respuesta es correcta, tiene body y es un JSON": true,
+				"Body de la respuesta no vacío": true,
+				"Respuesta con los atributos esperados": true,
+				"Tipos de datos de la respuesta": true,
+				"El ID obtenido es un número válido mayor a 0": true,
+				"Los datos recibidos son iguales a los enviados": true
+			},
+			"testPassFailCounts": {
+				"El método es de tipo POST": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La URL de la petición es la esperada": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Existe la propiedad Content-Type en el encabezado de la petición y es igual a 'application/json'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tiempo de respuesta menor a 200 ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status igual a '201 Created'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Petición con los atributos esperados": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tipos de datos de la petición": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La respuesta es correcta, tiene body y es un JSON": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body de la respuesta no vacío": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Respuesta con los atributos esperados": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tipos de datos de la respuesta": {
+					"pass": 1,
+					"fail": 0
+				},
+				"El ID obtenido es un número válido mayor a 0": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Los datos recibidos son iguales a los enviados": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				9
+			],
+			"allTests": [
+				{
+					"El método es de tipo POST": true,
+					"La URL de la petición es la esperada": true,
+					"Existe la propiedad Content-Type en el encabezado de la petición y es igual a 'application/json'": true,
+					"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": true,
+					"Tiempo de respuesta menor a 200 ms": true,
+					"Status igual a '201 Created'": true,
+					"Petición con los atributos esperados": true,
+					"Tipos de datos de la petición": true,
+					"La respuesta es correcta, tiene body y es un JSON": true,
+					"Body de la respuesta no vacío": true,
+					"Respuesta con los atributos esperados": true,
+					"Tipos de datos de la respuesta": true,
+					"El ID obtenido es un número válido mayor a 0": true,
+					"Los datos recibidos son iguales a los enviados": true
+				}
+			]
+		},
+		{
+			"id": "ad7f7b4f-6b04-43f9-add4-034871fbaac2",
+			"name": "POST Con ID",
+			"url": "http://localhost:8080/ciudades",
+			"time": 6,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"El método es de tipo POST": true,
+				"La URL de la petición es la esperada": true,
+				"Existe la propiedad Content-Type en el encabezado de la petición y es igual a 'application/json'": true,
+				"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": true,
+				"Tiempo de respuesta menor a 200 ms": true,
+				"Status igual a '400 Bad Request'": true,
+				"Petición con los atributos esperados": true,
+				"Tipos de datos de la petición": true,
+				"La respuesta es con error, tiene body y es un JSON": true,
+				"Body de la respuesta no vacío": true,
+				"Respuesta con los atributos esperados": true,
+				"Tipos de datos de la respuesta": true,
+				"Status con código 400": true,
+				"Error con texto 'no puede recibir un ID'": true
+			},
+			"testPassFailCounts": {
+				"El método es de tipo POST": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La URL de la petición es la esperada": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Existe la propiedad Content-Type en el encabezado de la petición y es igual a 'application/json'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tiempo de respuesta menor a 200 ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status igual a '400 Bad Request'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Petición con los atributos esperados": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tipos de datos de la petición": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La respuesta es con error, tiene body y es un JSON": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body de la respuesta no vacío": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Respuesta con los atributos esperados": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tipos de datos de la respuesta": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status con código 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error con texto 'no puede recibir un ID'": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				6
+			],
+			"allTests": [
+				{
+					"El método es de tipo POST": true,
+					"La URL de la petición es la esperada": true,
+					"Existe la propiedad Content-Type en el encabezado de la petición y es igual a 'application/json'": true,
+					"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": true,
+					"Tiempo de respuesta menor a 200 ms": true,
+					"Status igual a '400 Bad Request'": true,
+					"Petición con los atributos esperados": true,
+					"Tipos de datos de la petición": true,
+					"La respuesta es con error, tiene body y es un JSON": true,
+					"Body de la respuesta no vacío": true,
+					"Respuesta con los atributos esperados": true,
+					"Tipos de datos de la respuesta": true,
+					"Status con código 400": true,
+					"Error con texto 'no puede recibir un ID'": true
+				}
+			]
+		},
+		{
+			"id": "371f6a85-bfa9-4883-9a02-e6eebce9870e",
+			"name": "GET ONE",
+			"url": "http://localhost:8080/ciudades/1",
+			"time": 8,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"El método es de tipo GET": true,
+				"La URL de la petición es la esperada": true,
+				"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": true,
+				"Tiempo de respuesta menor a 200 ms": true,
+				"Status igual a '200 OK'": true,
+				"Body de la petición vacío": true,
+				"La respuesta es correcta, tiene body y es un JSON": true,
+				"Body de la respuesta no vacío": true,
+				"Respuesta con los atributos esperados": true,
+				"Tipos de datos de la respuesta": true,
+				"El ID obtenido es un número válido mayor a 0": true,
+				"El ID recibido es igual al enviado": true
+			},
+			"testPassFailCounts": {
+				"El método es de tipo GET": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La URL de la petición es la esperada": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tiempo de respuesta menor a 200 ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status igual a '200 OK'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body de la petición vacío": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La respuesta es correcta, tiene body y es un JSON": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body de la respuesta no vacío": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Respuesta con los atributos esperados": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tipos de datos de la respuesta": {
+					"pass": 1,
+					"fail": 0
+				},
+				"El ID obtenido es un número válido mayor a 0": {
+					"pass": 1,
+					"fail": 0
+				},
+				"El ID recibido es igual al enviado": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				8
+			],
+			"allTests": [
+				{
+					"El método es de tipo GET": true,
+					"La URL de la petición es la esperada": true,
+					"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": true,
+					"Tiempo de respuesta menor a 200 ms": true,
+					"Status igual a '200 OK'": true,
+					"Body de la petición vacío": true,
+					"La respuesta es correcta, tiene body y es un JSON": true,
+					"Body de la respuesta no vacío": true,
+					"Respuesta con los atributos esperados": true,
+					"Tipos de datos de la respuesta": true,
+					"El ID obtenido es un número válido mayor a 0": true,
+					"El ID recibido es igual al enviado": true
+				}
+			]
+		},
+		{
+			"id": "71723e0c-fa07-4582-8a34-4c06997de579",
+			"name": "GET ONE Inexistente",
+			"url": "http://localhost:8080/ciudades/9999",
+			"time": 6,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"El método es de tipo GET": true,
+				"La URL de la petición es la esperada": true,
+				"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": true,
+				"Tiempo de respuesta menor a 200 ms": true,
+				"Status igual a '404 Not Found'": true,
+				"Body de la petición vacío": true,
+				"La respuesta es un error, tiene body y es un JSON": true,
+				"Body de la respuesta no vacío": true,
+				"Respuesta con los atributos esperados": true,
+				"Tipos de datos de la respuesta": true,
+				"Status con código 404": true,
+				"Error con texto 'no existe'": true
+			},
+			"testPassFailCounts": {
+				"El método es de tipo GET": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La URL de la petición es la esperada": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tiempo de respuesta menor a 200 ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status igual a '404 Not Found'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body de la petición vacío": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La respuesta es un error, tiene body y es un JSON": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body de la respuesta no vacío": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Respuesta con los atributos esperados": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tipos de datos de la respuesta": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status con código 404": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error con texto 'no existe'": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				6
+			],
+			"allTests": [
+				{
+					"El método es de tipo GET": true,
+					"La URL de la petición es la esperada": true,
+					"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": true,
+					"Tiempo de respuesta menor a 200 ms": true,
+					"Status igual a '404 Not Found'": true,
+					"Body de la petición vacío": true,
+					"La respuesta es un error, tiene body y es un JSON": true,
+					"Body de la respuesta no vacío": true,
+					"Respuesta con los atributos esperados": true,
+					"Tipos de datos de la respuesta": true,
+					"Status con código 404": true,
+					"Error con texto 'no existe'": true
+				}
+			]
+		},
+		{
+			"id": "5ff5d237-bf51-4001-b7ca-4e4d6c8a06f9",
+			"name": "GET ALL",
+			"url": "http://localhost:8080/ciudades",
+			"time": 8,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"El método es de tipo GET": true,
+				"La URL de la petición es la esperada": true,
+				"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": true,
+				"Tiempo de respuesta menor a 200 ms": true,
+				"Status igual a '200 OK'": true,
+				"Body de la petición vacío": true,
+				"La respuesta es correcta, tiene body y es un JSON": true,
+				"Body de la respuesta no vacío": true,
+				"Respuesta es un array": true,
+				"Array con al menos 3 elementos": true,
+				"Elementos del array con los atributos esperados": true,
+				"Tipos de datos de los elementos del array": true,
+				"Los ID's obtenidos son números válidos mayores a 0": true
+			},
+			"testPassFailCounts": {
+				"El método es de tipo GET": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La URL de la petición es la esperada": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tiempo de respuesta menor a 200 ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status igual a '200 OK'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body de la petición vacío": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La respuesta es correcta, tiene body y es un JSON": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body de la respuesta no vacío": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Respuesta es un array": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Array con al menos 3 elementos": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Elementos del array con los atributos esperados": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tipos de datos de los elementos del array": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Los ID's obtenidos son números válidos mayores a 0": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				8
+			],
+			"allTests": [
+				{
+					"El método es de tipo GET": true,
+					"La URL de la petición es la esperada": true,
+					"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": true,
+					"Tiempo de respuesta menor a 200 ms": true,
+					"Status igual a '200 OK'": true,
+					"Body de la petición vacío": true,
+					"La respuesta es correcta, tiene body y es un JSON": true,
+					"Body de la respuesta no vacío": true,
+					"Respuesta es un array": true,
+					"Array con al menos 3 elementos": true,
+					"Elementos del array con los atributos esperados": true,
+					"Tipos de datos de los elementos del array": true,
+					"Los ID's obtenidos son números válidos mayores a 0": true
+				}
+			]
+		},
+		{
+			"id": "261e63a2-6c77-4522-8eb5-ca8d3e9f6252",
+			"name": "PUT",
+			"url": "http://localhost:8080/ciudades",
+			"time": 9,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"El método es de tipo PUT": true,
+				"La URL de la petición es la esperada": true,
+				"Existe la propiedad Content-Type en el encabezado de la petición y es igual a 'application/json'": true,
+				"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": true,
+				"Tiempo de respuesta menor a 200 ms": true,
+				"Status igual a '200 OK'": true,
+				"Petición con los atributos esperados": true,
+				"Tipos de datos de la petición": true,
+				"La respuesta es correcta, tiene body y es un JSON": true,
+				"Body de la respuesta no vacío": true,
+				"Respuesta con los atributos esperados": true,
+				"Tipos de datos de la respuesta": true,
+				"El ID obtenido es un número válido mayor a 0 e igual al enviado": true
+			},
+			"testPassFailCounts": {
+				"El método es de tipo PUT": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La URL de la petición es la esperada": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Existe la propiedad Content-Type en el encabezado de la petición y es igual a 'application/json'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tiempo de respuesta menor a 200 ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status igual a '200 OK'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Petición con los atributos esperados": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tipos de datos de la petición": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La respuesta es correcta, tiene body y es un JSON": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body de la respuesta no vacío": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Respuesta con los atributos esperados": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tipos de datos de la respuesta": {
+					"pass": 1,
+					"fail": 0
+				},
+				"El ID obtenido es un número válido mayor a 0 e igual al enviado": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				9
+			],
+			"allTests": [
+				{
+					"El método es de tipo PUT": true,
+					"La URL de la petición es la esperada": true,
+					"Existe la propiedad Content-Type en el encabezado de la petición y es igual a 'application/json'": true,
+					"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": true,
+					"Tiempo de respuesta menor a 200 ms": true,
+					"Status igual a '200 OK'": true,
+					"Petición con los atributos esperados": true,
+					"Tipos de datos de la petición": true,
+					"La respuesta es correcta, tiene body y es un JSON": true,
+					"Body de la respuesta no vacío": true,
+					"Respuesta con los atributos esperados": true,
+					"Tipos de datos de la respuesta": true,
+					"El ID obtenido es un número válido mayor a 0 e igual al enviado": true
+				}
+			]
+		},
+		{
+			"id": "b84896b0-ba02-4bf7-ab9a-2346e5acbc3c",
+			"name": "PUT Sin ID",
+			"url": "http://localhost:8080/ciudades",
+			"time": 6,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"El método es de tipo PUT": true,
+				"La URL de la petición es la esperada": true,
+				"Existe la propiedad Content-Type en el encabezado de la petición y es igual a 'application/json'": true,
+				"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": true,
+				"Tiempo de respuesta menor a 200 ms": true,
+				"Status igual a '400 Bad Request'": true,
+				"Petición con los atributos esperados": true,
+				"Tipos de datos de la petición": true,
+				"La respuesta es con error, tiene body y es un JSON": true,
+				"Body de la respuesta no vacío": true,
+				"Respuesta con los atributos esperados": true,
+				"Tipos de datos de la respuesta": true,
+				"Status con código 400": true,
+				"Error con texto 'no puede recibir un ID'": true
+			},
+			"testPassFailCounts": {
+				"El método es de tipo PUT": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La URL de la petición es la esperada": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Existe la propiedad Content-Type en el encabezado de la petición y es igual a 'application/json'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tiempo de respuesta menor a 200 ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status igual a '400 Bad Request'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Petición con los atributos esperados": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tipos de datos de la petición": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La respuesta es con error, tiene body y es un JSON": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body de la respuesta no vacío": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Respuesta con los atributos esperados": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tipos de datos de la respuesta": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status con código 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error con texto 'no puede recibir un ID'": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				6
+			],
+			"allTests": [
+				{
+					"El método es de tipo PUT": true,
+					"La URL de la petición es la esperada": true,
+					"Existe la propiedad Content-Type en el encabezado de la petición y es igual a 'application/json'": true,
+					"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": true,
+					"Tiempo de respuesta menor a 200 ms": true,
+					"Status igual a '400 Bad Request'": true,
+					"Petición con los atributos esperados": true,
+					"Tipos de datos de la petición": true,
+					"La respuesta es con error, tiene body y es un JSON": true,
+					"Body de la respuesta no vacío": true,
+					"Respuesta con los atributos esperados": true,
+					"Tipos de datos de la respuesta": true,
+					"Status con código 400": true,
+					"Error con texto 'no puede recibir un ID'": true
+				}
+			]
+		},
+		{
+			"id": "127583a3-8b12-40d2-8284-347c77c68407",
+			"name": "DELETE Exitoso",
+			"url": "http://localhost:8080/ciudades/4",
+			"time": 13,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"El método es de tipo DELETE": true,
+				"La URL de la petición es la esperada": true,
+				"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": true,
+				"Tiempo de respuesta menor a 200 ms": true,
+				"Status igual a '200 OK'": true,
+				"Body de la petición vacío": true,
+				"La respuesta es correcta, tiene body y es un JSON": true,
+				"Body de la respuesta no vacío": true,
+				"Respuesta con los atributos esperados": true,
+				"Tipos de datos de la respuesta": true,
+				"Mensaje con texto 'eliminada correctamente'": true
+			},
+			"testPassFailCounts": {
+				"El método es de tipo DELETE": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La URL de la petición es la esperada": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tiempo de respuesta menor a 200 ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status igual a '200 OK'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body de la petición vacío": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La respuesta es correcta, tiene body y es un JSON": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body de la respuesta no vacío": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Respuesta con los atributos esperados": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tipos de datos de la respuesta": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Mensaje con texto 'eliminada correctamente'": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				13
+			],
+			"allTests": [
+				{
+					"El método es de tipo DELETE": true,
+					"La URL de la petición es la esperada": true,
+					"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": true,
+					"Tiempo de respuesta menor a 200 ms": true,
+					"Status igual a '200 OK'": true,
+					"Body de la petición vacío": true,
+					"La respuesta es correcta, tiene body y es un JSON": true,
+					"Body de la respuesta no vacío": true,
+					"Respuesta con los atributos esperados": true,
+					"Tipos de datos de la respuesta": true,
+					"Mensaje con texto 'eliminada correctamente'": true
+				}
+			]
+		},
+		{
+			"id": "0abc2379-a5a3-4032-ad2a-33934d210006",
+			"name": "DELETE Inexistente",
+			"url": "http://localhost:8080/ciudades/9999",
+			"time": 8,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"El método es de tipo DELETE": true,
+				"La URL de la petición es la esperada": true,
+				"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": true,
+				"Tiempo de respuesta menor a 200 ms": true,
+				"Status igual a '404 Not Found'": true,
+				"Body de la petición vacío": true,
+				"La respuesta es errónea, tiene body y es un JSON": true,
+				"Body de la respuesta no vacío": true,
+				"Respuesta con los atributos esperados": true,
+				"Tipos de datos de la respuesta": true,
+				"Status con código 404": true,
+				"Error con texto 'no existe'": true
+			},
+			"testPassFailCounts": {
+				"El método es de tipo DELETE": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La URL de la petición es la esperada": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tiempo de respuesta menor a 200 ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status igual a '404 Not Found'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body de la petición vacío": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La respuesta es errónea, tiene body y es un JSON": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body de la respuesta no vacío": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Respuesta con los atributos esperados": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tipos de datos de la respuesta": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status con código 404": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error con texto 'no existe'": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				8
+			],
+			"allTests": [
+				{
+					"El método es de tipo DELETE": true,
+					"La URL de la petición es la esperada": true,
+					"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": true,
+					"Tiempo de respuesta menor a 200 ms": true,
+					"Status igual a '404 Not Found'": true,
+					"Body de la petición vacío": true,
+					"La respuesta es errónea, tiene body y es un JSON": true,
+					"Body de la respuesta no vacío": true,
+					"Respuesta con los atributos esperados": true,
+					"Tipos de datos de la respuesta": true,
+					"Status con código 404": true,
+					"Error con texto 'no existe'": true
+				}
+			]
+		},
+		{
+			"id": "46ef9dc2-544f-40d6-b0be-7ce9c24155d4",
+			"name": "POST",
+			"url": "http://localhost:8080/caracteristicas",
+			"time": 10,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"El método es de tipo POST": true,
+				"La URL de la petición es la esperada": true,
+				"Existe la propiedad Content-Type en el encabezado de la petición y es igual a 'application/json'": true,
+				"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": true,
+				"Tiempo de respuesta menor a 200 ms": true,
+				"Status igual a '201 Created'": true,
+				"Petición con los atributos esperados": true,
+				"Tipos de datos de la petición": true,
+				"La respuesta es correcta, tiene body y es un JSON": true,
+				"Body de la respuesta no vacío": true,
+				"Respuesta con los atributos esperados": true,
+				"Tipos de datos de la respuesta": true,
+				"El ID obtenido es un número válido mayor a 0": true,
+				"Los datos recibidos son iguales a los enviados": true
+			},
+			"testPassFailCounts": {
+				"El método es de tipo POST": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La URL de la petición es la esperada": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Existe la propiedad Content-Type en el encabezado de la petición y es igual a 'application/json'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tiempo de respuesta menor a 200 ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status igual a '201 Created'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Petición con los atributos esperados": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tipos de datos de la petición": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La respuesta es correcta, tiene body y es un JSON": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body de la respuesta no vacío": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Respuesta con los atributos esperados": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tipos de datos de la respuesta": {
+					"pass": 1,
+					"fail": 0
+				},
+				"El ID obtenido es un número válido mayor a 0": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Los datos recibidos son iguales a los enviados": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				10
+			],
+			"allTests": [
+				{
+					"El método es de tipo POST": true,
+					"La URL de la petición es la esperada": true,
+					"Existe la propiedad Content-Type en el encabezado de la petición y es igual a 'application/json'": true,
+					"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": true,
+					"Tiempo de respuesta menor a 200 ms": true,
+					"Status igual a '201 Created'": true,
+					"Petición con los atributos esperados": true,
+					"Tipos de datos de la petición": true,
+					"La respuesta es correcta, tiene body y es un JSON": true,
+					"Body de la respuesta no vacío": true,
+					"Respuesta con los atributos esperados": true,
+					"Tipos de datos de la respuesta": true,
+					"El ID obtenido es un número válido mayor a 0": true,
+					"Los datos recibidos son iguales a los enviados": true
+				}
+			]
+		},
+		{
+			"id": "2d899d09-a25b-4ed1-972e-a5912a4945bd",
+			"name": "POST Con ID",
+			"url": "http://localhost:8080/caracteristicas",
+			"time": 5,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"El método es de tipo POST": true,
+				"La URL de la petición es la esperada": true,
+				"Existe la propiedad Content-Type en el encabezado de la petición y es igual a 'application/json'": true,
+				"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": true,
+				"Tiempo de respuesta menor a 200 ms": true,
+				"Status igual a '400 Bad Request'": true,
+				"Petición con los atributos esperados": true,
+				"Tipos de datos de la petición": true,
+				"La respuesta es con error, tiene body y es un JSON": true,
+				"Body de la respuesta no vacío": true,
+				"Respuesta con los atributos esperados": true,
+				"Tipos de datos de la respuesta": true,
+				"Status con código 400": true,
+				"Error con texto 'no puede recibir un ID'": true
+			},
+			"testPassFailCounts": {
+				"El método es de tipo POST": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La URL de la petición es la esperada": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Existe la propiedad Content-Type en el encabezado de la petición y es igual a 'application/json'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tiempo de respuesta menor a 200 ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status igual a '400 Bad Request'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Petición con los atributos esperados": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tipos de datos de la petición": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La respuesta es con error, tiene body y es un JSON": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body de la respuesta no vacío": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Respuesta con los atributos esperados": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tipos de datos de la respuesta": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status con código 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error con texto 'no puede recibir un ID'": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				5
+			],
+			"allTests": [
+				{
+					"El método es de tipo POST": true,
+					"La URL de la petición es la esperada": true,
+					"Existe la propiedad Content-Type en el encabezado de la petición y es igual a 'application/json'": true,
+					"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": true,
+					"Tiempo de respuesta menor a 200 ms": true,
+					"Status igual a '400 Bad Request'": true,
+					"Petición con los atributos esperados": true,
+					"Tipos de datos de la petición": true,
+					"La respuesta es con error, tiene body y es un JSON": true,
+					"Body de la respuesta no vacío": true,
+					"Respuesta con los atributos esperados": true,
+					"Tipos de datos de la respuesta": true,
+					"Status con código 400": true,
+					"Error con texto 'no puede recibir un ID'": true
+				}
+			]
+		},
+		{
+			"id": "6760910d-4546-4400-a8b2-f7735341363e",
+			"name": "GET ONE",
+			"url": "http://localhost:8080/caracteristicas/2",
+			"time": 9,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"El método es de tipo GET": true,
+				"La URL de la petición es la esperada": true,
+				"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": true,
+				"Tiempo de respuesta menor a 200 ms": true,
+				"Status igual a '200 OK'": true,
+				"Body de la petición vacío": true,
+				"La respuesta es correcta, tiene body y es un JSON": true,
+				"Body de la respuesta no vacío": true,
+				"Respuesta con los atributos esperados": true,
+				"Tipos de datos de la respuesta": true,
+				"El ID obtenido es un número válido mayor a 0": true,
+				"El ID recibido es igual al enviado": true
+			},
+			"testPassFailCounts": {
+				"El método es de tipo GET": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La URL de la petición es la esperada": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tiempo de respuesta menor a 200 ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status igual a '200 OK'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body de la petición vacío": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La respuesta es correcta, tiene body y es un JSON": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body de la respuesta no vacío": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Respuesta con los atributos esperados": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tipos de datos de la respuesta": {
+					"pass": 1,
+					"fail": 0
+				},
+				"El ID obtenido es un número válido mayor a 0": {
+					"pass": 1,
+					"fail": 0
+				},
+				"El ID recibido es igual al enviado": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				9
+			],
+			"allTests": [
+				{
+					"El método es de tipo GET": true,
+					"La URL de la petición es la esperada": true,
+					"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": true,
+					"Tiempo de respuesta menor a 200 ms": true,
+					"Status igual a '200 OK'": true,
+					"Body de la petición vacío": true,
+					"La respuesta es correcta, tiene body y es un JSON": true,
+					"Body de la respuesta no vacío": true,
+					"Respuesta con los atributos esperados": true,
+					"Tipos de datos de la respuesta": true,
+					"El ID obtenido es un número válido mayor a 0": true,
+					"El ID recibido es igual al enviado": true
+				}
+			]
+		},
+		{
+			"id": "f0d5048a-bb82-4b03-a016-94af07eb1f76",
+			"name": "GET ONE Inexistente",
+			"url": "http://localhost:8080/caracteristicas/9999",
+			"time": 6,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"El método es de tipo GET": true,
+				"La URL de la petición es la esperada": true,
+				"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": true,
+				"Tiempo de respuesta menor a 200 ms": true,
+				"Status igual a '404 Not Found'": true,
+				"Body de la petición vacío": true,
+				"La respuesta es un error, tiene body y es un JSON": true,
+				"Body de la respuesta no vacío": true,
+				"Respuesta con los atributos esperados": true,
+				"Tipos de datos de la respuesta": true,
+				"Status con código 404": true,
+				"Error con texto 'no existe'": true
+			},
+			"testPassFailCounts": {
+				"El método es de tipo GET": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La URL de la petición es la esperada": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tiempo de respuesta menor a 200 ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status igual a '404 Not Found'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body de la petición vacío": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La respuesta es un error, tiene body y es un JSON": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body de la respuesta no vacío": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Respuesta con los atributos esperados": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tipos de datos de la respuesta": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status con código 404": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error con texto 'no existe'": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				6
+			],
+			"allTests": [
+				{
+					"El método es de tipo GET": true,
+					"La URL de la petición es la esperada": true,
+					"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": true,
+					"Tiempo de respuesta menor a 200 ms": true,
+					"Status igual a '404 Not Found'": true,
+					"Body de la petición vacío": true,
+					"La respuesta es un error, tiene body y es un JSON": true,
+					"Body de la respuesta no vacío": true,
+					"Respuesta con los atributos esperados": true,
+					"Tipos de datos de la respuesta": true,
+					"Status con código 404": true,
+					"Error con texto 'no existe'": true
+				}
+			]
+		},
+		{
+			"id": "f605e2d4-4783-4699-adf9-fa8e4d5083bf",
+			"name": "GET ALL",
+			"url": "http://localhost:8080/caracteristicas",
+			"time": 7,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"El método es de tipo GET": true,
+				"La URL de la petición es la esperada": true,
+				"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": true,
+				"Tiempo de respuesta menor a 200 ms": true,
+				"Status igual a '200 OK'": true,
+				"Body de la petición vacío": true,
+				"La respuesta es correcta, tiene body y es un JSON": true,
+				"Body de la respuesta no vacío": true,
+				"Respuesta es un array": true,
+				"Array con al menos 3 elementos": true,
+				"Elementos del array con los atributos esperados": true,
+				"Tipos de datos de los elementos del array": true,
+				"Los ID's obtenidos son números válidos mayores a 0": true
+			},
+			"testPassFailCounts": {
+				"El método es de tipo GET": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La URL de la petición es la esperada": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tiempo de respuesta menor a 200 ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status igual a '200 OK'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body de la petición vacío": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La respuesta es correcta, tiene body y es un JSON": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body de la respuesta no vacío": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Respuesta es un array": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Array con al menos 3 elementos": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Elementos del array con los atributos esperados": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tipos de datos de los elementos del array": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Los ID's obtenidos son números válidos mayores a 0": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				7
+			],
+			"allTests": [
+				{
+					"El método es de tipo GET": true,
+					"La URL de la petición es la esperada": true,
+					"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": true,
+					"Tiempo de respuesta menor a 200 ms": true,
+					"Status igual a '200 OK'": true,
+					"Body de la petición vacío": true,
+					"La respuesta es correcta, tiene body y es un JSON": true,
+					"Body de la respuesta no vacío": true,
+					"Respuesta es un array": true,
+					"Array con al menos 3 elementos": true,
+					"Elementos del array con los atributos esperados": true,
+					"Tipos de datos de los elementos del array": true,
+					"Los ID's obtenidos son números válidos mayores a 0": true
+				}
+			]
+		},
+		{
+			"id": "d889fd6e-aeed-4a8f-8b20-ececb37bc23e",
+			"name": "PUT",
+			"url": "http://localhost:8080/caracteristicas",
+			"time": 10,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"El método es de tipo PUT": true,
+				"La URL de la petición es la esperada": true,
+				"Existe la propiedad Content-Type en el encabezado de la petición y es igual a 'application/json'": true,
+				"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": true,
+				"Tiempo de respuesta menor a 200 ms": true,
+				"Status igual a '200 OK'": true,
+				"Petición con los atributos esperados": true,
+				"Tipos de datos de la petición": true,
+				"La respuesta es correcta, tiene body y es un JSON": true,
+				"Body de la respuesta no vacío": true,
+				"Respuesta con los atributos esperados": true,
+				"Tipos de datos de la respuesta": true,
+				"El ID obtenido es un número válido mayor a 0 e igual al enviado": true
+			},
+			"testPassFailCounts": {
+				"El método es de tipo PUT": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La URL de la petición es la esperada": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Existe la propiedad Content-Type en el encabezado de la petición y es igual a 'application/json'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tiempo de respuesta menor a 200 ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status igual a '200 OK'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Petición con los atributos esperados": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tipos de datos de la petición": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La respuesta es correcta, tiene body y es un JSON": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body de la respuesta no vacío": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Respuesta con los atributos esperados": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tipos de datos de la respuesta": {
+					"pass": 1,
+					"fail": 0
+				},
+				"El ID obtenido es un número válido mayor a 0 e igual al enviado": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				10
+			],
+			"allTests": [
+				{
+					"El método es de tipo PUT": true,
+					"La URL de la petición es la esperada": true,
+					"Existe la propiedad Content-Type en el encabezado de la petición y es igual a 'application/json'": true,
+					"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": true,
+					"Tiempo de respuesta menor a 200 ms": true,
+					"Status igual a '200 OK'": true,
+					"Petición con los atributos esperados": true,
+					"Tipos de datos de la petición": true,
+					"La respuesta es correcta, tiene body y es un JSON": true,
+					"Body de la respuesta no vacío": true,
+					"Respuesta con los atributos esperados": true,
+					"Tipos de datos de la respuesta": true,
+					"El ID obtenido es un número válido mayor a 0 e igual al enviado": true
+				}
+			]
+		},
+		{
+			"id": "8c8fbe84-fcc5-423d-83f7-9fe438da2b14",
+			"name": "PUT Sin iD",
+			"url": "http://localhost:8080/caracteristicas",
+			"time": 5,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"El método es de tipo PUT": true,
+				"La URL de la petición es la esperada": true,
+				"Existe la propiedad Content-Type en el encabezado de la petición y es igual a 'application/json'": true,
+				"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": true,
+				"Tiempo de respuesta menor a 200 ms": true,
+				"Status igual a '400 Bad Request'": true,
+				"Petición con los atributos esperados": true,
+				"Tipos de datos de la petición": true,
+				"La respuesta es con error, tiene body y es un JSON": true,
+				"Body de la respuesta no vacío": true,
+				"Respuesta con los atributos esperados": true,
+				"Tipos de datos de la respuesta": true,
+				"Status con código 400": true,
+				"Error con texto 'no puede recibir un ID'": true
+			},
+			"testPassFailCounts": {
+				"El método es de tipo PUT": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La URL de la petición es la esperada": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Existe la propiedad Content-Type en el encabezado de la petición y es igual a 'application/json'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tiempo de respuesta menor a 200 ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status igual a '400 Bad Request'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Petición con los atributos esperados": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tipos de datos de la petición": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La respuesta es con error, tiene body y es un JSON": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body de la respuesta no vacío": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Respuesta con los atributos esperados": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tipos de datos de la respuesta": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status con código 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error con texto 'no puede recibir un ID'": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				5
+			],
+			"allTests": [
+				{
+					"El método es de tipo PUT": true,
+					"La URL de la petición es la esperada": true,
+					"Existe la propiedad Content-Type en el encabezado de la petición y es igual a 'application/json'": true,
+					"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": true,
+					"Tiempo de respuesta menor a 200 ms": true,
+					"Status igual a '400 Bad Request'": true,
+					"Petición con los atributos esperados": true,
+					"Tipos de datos de la petición": true,
+					"La respuesta es con error, tiene body y es un JSON": true,
+					"Body de la respuesta no vacío": true,
+					"Respuesta con los atributos esperados": true,
+					"Tipos de datos de la respuesta": true,
+					"Status con código 400": true,
+					"Error con texto 'no puede recibir un ID'": true
+				}
+			]
+		},
+		{
+			"id": "fa7a9623-ad6c-4ffd-b38f-7080e505f5e2",
+			"name": "DELETE Exitoso",
+			"url": "http://localhost:8080/caracteristicas/4",
+			"time": 18,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"El método es de tipo DELETE": true,
+				"La URL de la petición es la esperada": true,
+				"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": true,
+				"Tiempo de respuesta menor a 200 ms": true,
+				"Status igual a '200 OK'": true,
+				"Body de la petición vacío": true,
+				"La respuesta es correcta, tiene body y es un JSON": true,
+				"Body de la respuesta no vacío": true,
+				"Respuesta con los atributos esperados": true,
+				"Tipos de datos de la respuesta": true,
+				"Mensaje con texto 'eliminada correctamente'": true
+			},
+			"testPassFailCounts": {
+				"El método es de tipo DELETE": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La URL de la petición es la esperada": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tiempo de respuesta menor a 200 ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status igual a '200 OK'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body de la petición vacío": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La respuesta es correcta, tiene body y es un JSON": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body de la respuesta no vacío": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Respuesta con los atributos esperados": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tipos de datos de la respuesta": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Mensaje con texto 'eliminada correctamente'": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				18
+			],
+			"allTests": [
+				{
+					"El método es de tipo DELETE": true,
+					"La URL de la petición es la esperada": true,
+					"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": true,
+					"Tiempo de respuesta menor a 200 ms": true,
+					"Status igual a '200 OK'": true,
+					"Body de la petición vacío": true,
+					"La respuesta es correcta, tiene body y es un JSON": true,
+					"Body de la respuesta no vacío": true,
+					"Respuesta con los atributos esperados": true,
+					"Tipos de datos de la respuesta": true,
+					"Mensaje con texto 'eliminada correctamente'": true
+				}
+			]
+		},
+		{
+			"id": "1cfcd585-5d73-42e6-95b9-397439c3136c",
+			"name": "DELETE Inexistente",
+			"url": "http://localhost:8080/caracteristicas/9999",
+			"time": 7,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"El método es de tipo DELETE": true,
+				"La URL de la petición es la esperada": true,
+				"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": true,
+				"Tiempo de respuesta menor a 200 ms": true,
+				"Status igual a '404 Not Found'": true,
+				"Body de la petición vacío": true,
+				"La respuesta es errónea, tiene body y es un JSON": true,
+				"Body de la respuesta no vacío": true,
+				"Respuesta con los atributos esperados": true,
+				"Tipos de datos de la respuesta": true,
+				"Status con código 404": true,
+				"Error con texto 'no existe'": true
+			},
+			"testPassFailCounts": {
+				"El método es de tipo DELETE": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La URL de la petición es la esperada": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tiempo de respuesta menor a 200 ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status igual a '404 Not Found'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body de la petición vacío": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La respuesta es errónea, tiene body y es un JSON": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body de la respuesta no vacío": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Respuesta con los atributos esperados": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tipos de datos de la respuesta": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status con código 404": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error con texto 'no existe'": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				7
+			],
+			"allTests": [
+				{
+					"El método es de tipo DELETE": true,
+					"La URL de la petición es la esperada": true,
+					"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": true,
+					"Tiempo de respuesta menor a 200 ms": true,
+					"Status igual a '404 Not Found'": true,
+					"Body de la petición vacío": true,
+					"La respuesta es errónea, tiene body y es un JSON": true,
+					"Body de la respuesta no vacío": true,
+					"Respuesta con los atributos esperados": true,
+					"Tipos de datos de la respuesta": true,
+					"Status con código 404": true,
+					"Error con texto 'no existe'": true
+				}
+			]
+		},
+		{
+			"id": "53030cad-41a8-4720-a3a0-27914d1361b5",
+			"name": "GET ONE",
+			"url": "http://localhost:8080/imagenes/2",
+			"time": 10,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"El método es de tipo GET": true,
+				"La URL de la petición es la esperada": true,
+				"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": true,
+				"Tiempo de respuesta menor a 200 ms": true,
+				"Status igual a '200 OK'": true,
+				"Body de la petición vacío": true,
+				"La respuesta es correcta, tiene body y es un JSON": true,
+				"Body de la respuesta no vacío": true,
+				"Respuesta con los atributos esperados": true,
+				"Tipos de datos de la respuesta": true,
+				"El ID obtenido es un número válido mayor a 0": true,
+				"El ID recibido es igual al enviado": true,
+				"El producto no es nulo, su ID no es nulo y el ID es un número válido mayor a 0": true
+			},
+			"testPassFailCounts": {
+				"El método es de tipo GET": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La URL de la petición es la esperada": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tiempo de respuesta menor a 200 ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status igual a '200 OK'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body de la petición vacío": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La respuesta es correcta, tiene body y es un JSON": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body de la respuesta no vacío": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Respuesta con los atributos esperados": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tipos de datos de la respuesta": {
+					"pass": 1,
+					"fail": 0
+				},
+				"El ID obtenido es un número válido mayor a 0": {
+					"pass": 1,
+					"fail": 0
+				},
+				"El ID recibido es igual al enviado": {
+					"pass": 1,
+					"fail": 0
+				},
+				"El producto no es nulo, su ID no es nulo y el ID es un número válido mayor a 0": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				10
+			],
+			"allTests": [
+				{
+					"El método es de tipo GET": true,
+					"La URL de la petición es la esperada": true,
+					"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": true,
+					"Tiempo de respuesta menor a 200 ms": true,
+					"Status igual a '200 OK'": true,
+					"Body de la petición vacío": true,
+					"La respuesta es correcta, tiene body y es un JSON": true,
+					"Body de la respuesta no vacío": true,
+					"Respuesta con los atributos esperados": true,
+					"Tipos de datos de la respuesta": true,
+					"El ID obtenido es un número válido mayor a 0": true,
+					"El ID recibido es igual al enviado": true,
+					"El producto no es nulo, su ID no es nulo y el ID es un número válido mayor a 0": true
+				}
+			]
+		},
+		{
+			"id": "3a1e2df0-13db-4140-ab1c-3edc78517b90",
+			"name": "GET ONE Inexistente",
+			"url": "http://localhost:8080/imagenes/9999",
+			"time": 8,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"El método es de tipo GET": true,
+				"La URL de la petición es la esperada": true,
+				"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": true,
+				"Tiempo de respuesta menor a 200 ms": true,
+				"Status igual a '404 Not Found'": true,
+				"Body de la petición vacío": true,
+				"La respuesta es un error, tiene body y es un JSON": true,
+				"Body de la respuesta no vacío": true,
+				"Respuesta con los atributos esperados": true,
+				"Tipos de datos de la respuesta": true,
+				"Status con código 404": true,
+				"Error con texto 'no existe'": true
+			},
+			"testPassFailCounts": {
+				"El método es de tipo GET": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La URL de la petición es la esperada": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tiempo de respuesta menor a 200 ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status igual a '404 Not Found'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body de la petición vacío": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La respuesta es un error, tiene body y es un JSON": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body de la respuesta no vacío": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Respuesta con los atributos esperados": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tipos de datos de la respuesta": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status con código 404": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error con texto 'no existe'": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				8
+			],
+			"allTests": [
+				{
+					"El método es de tipo GET": true,
+					"La URL de la petición es la esperada": true,
+					"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": true,
+					"Tiempo de respuesta menor a 200 ms": true,
+					"Status igual a '404 Not Found'": true,
+					"Body de la petición vacío": true,
+					"La respuesta es un error, tiene body y es un JSON": true,
+					"Body de la respuesta no vacío": true,
+					"Respuesta con los atributos esperados": true,
+					"Tipos de datos de la respuesta": true,
+					"Status con código 404": true,
+					"Error con texto 'no existe'": true
+				}
+			]
+		},
+		{
+			"id": "cad0644e-1f98-4f5c-8d30-6f53cd91f9be",
+			"name": "GET ALL",
+			"url": "http://localhost:8080/imagenes",
+			"time": 11,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"El método es de tipo GET": true,
+				"La URL de la petición es la esperada": true,
+				"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": true,
+				"Tiempo de respuesta menor a 200 ms": true,
+				"Status igual a '200 OK'": true,
+				"Body de la petición vacío": true,
+				"La respuesta es correcta, tiene body y es un JSON": true,
+				"Body de la respuesta no vacío": true,
+				"Respuesta es un array": true,
+				"Array con al menos 3 elementos": true,
+				"Elementos del array con los atributos esperados": true,
+				"Tipos de datos de los elementos del array": true,
+				"Los ID's obtenidos son números válidos mayores a 0": true,
+				"Los productos no son nulos, sus ID's no son nulos y los ID's son un número válido mayor a 0": true
+			},
+			"testPassFailCounts": {
+				"El método es de tipo GET": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La URL de la petición es la esperada": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tiempo de respuesta menor a 200 ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status igual a '200 OK'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body de la petición vacío": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La respuesta es correcta, tiene body y es un JSON": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body de la respuesta no vacío": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Respuesta es un array": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Array con al menos 3 elementos": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Elementos del array con los atributos esperados": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tipos de datos de los elementos del array": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Los ID's obtenidos son números válidos mayores a 0": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Los productos no son nulos, sus ID's no son nulos y los ID's son un número válido mayor a 0": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				11
+			],
+			"allTests": [
+				{
+					"El método es de tipo GET": true,
+					"La URL de la petición es la esperada": true,
+					"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": true,
+					"Tiempo de respuesta menor a 200 ms": true,
+					"Status igual a '200 OK'": true,
+					"Body de la petición vacío": true,
+					"La respuesta es correcta, tiene body y es un JSON": true,
+					"Body de la respuesta no vacío": true,
+					"Respuesta es un array": true,
+					"Array con al menos 3 elementos": true,
+					"Elementos del array con los atributos esperados": true,
+					"Tipos de datos de los elementos del array": true,
+					"Los ID's obtenidos son números válidos mayores a 0": true,
+					"Los productos no son nulos, sus ID's no son nulos y los ID's son un número válido mayor a 0": true
+				}
+			]
+		},
+		{
+			"id": "10f69378-40fb-490c-b44f-d6fdf588eee3",
+			"name": "POST",
+			"url": "http://localhost:8080/productos",
+			"time": 36,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"El método es de tipo POST": true,
+				"La URL de la petición es la esperada": true,
+				"Existe la propiedad Content-Type en el encabezado de la petición y es igual a 'application/json'": true,
+				"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": true,
+				"Tiempo de respuesta menor a 200 ms": true,
+				"Status igual a '201 Created'": true,
+				"Petición con los atributos esperados": true,
+				"Tipos de datos de la petición": true,
+				"La ciudad de la petición tiene un ID no nulo que es un número válido mayor a 0": true,
+				"La categoría de la petición tiene un ID no nulo que es un número válido mayor a 0": true,
+				"Las imágenes de la petición no tienen ID": true,
+				"Las características de la petición tienen un ID no nulo que es un número válido mayor a 0": true,
+				"La respuesta es correcta, tiene body y es un JSON": true,
+				"Body de la respuesta no vacío": true,
+				"Respuesta con los atributos esperados": true,
+				"Tipos de datos de la respuesta": true,
+				"El ID obtenido es un número válido mayor a 0": true,
+				"La ciudad de la respuesta tiene un ID no nulo que es un número válido mayor a 0": true,
+				"La categoría de la respuesta tiene un ID no nulo que es un número válido mayor a 0": true,
+				"Las imágenes de la respuesta tienen un ID no nulo que es un número válido mayor a 0": true,
+				"Las características de la respuesta tienen un ID no nulo que es un número válido mayor a 0": true,
+				"Los datos recibidos coinciden con los enviados": true
+			},
+			"testPassFailCounts": {
+				"El método es de tipo POST": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La URL de la petición es la esperada": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Existe la propiedad Content-Type en el encabezado de la petición y es igual a 'application/json'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tiempo de respuesta menor a 200 ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status igual a '201 Created'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Petición con los atributos esperados": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tipos de datos de la petición": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La ciudad de la petición tiene un ID no nulo que es un número válido mayor a 0": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La categoría de la petición tiene un ID no nulo que es un número válido mayor a 0": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Las imágenes de la petición no tienen ID": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Las características de la petición tienen un ID no nulo que es un número válido mayor a 0": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La respuesta es correcta, tiene body y es un JSON": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body de la respuesta no vacío": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Respuesta con los atributos esperados": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tipos de datos de la respuesta": {
+					"pass": 1,
+					"fail": 0
+				},
+				"El ID obtenido es un número válido mayor a 0": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La ciudad de la respuesta tiene un ID no nulo que es un número válido mayor a 0": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La categoría de la respuesta tiene un ID no nulo que es un número válido mayor a 0": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Las imágenes de la respuesta tienen un ID no nulo que es un número válido mayor a 0": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Las características de la respuesta tienen un ID no nulo que es un número válido mayor a 0": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Los datos recibidos coinciden con los enviados": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				36
+			],
+			"allTests": [
+				{
+					"El método es de tipo POST": true,
+					"La URL de la petición es la esperada": true,
+					"Existe la propiedad Content-Type en el encabezado de la petición y es igual a 'application/json'": true,
+					"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": true,
+					"Tiempo de respuesta menor a 200 ms": true,
+					"Status igual a '201 Created'": true,
+					"Petición con los atributos esperados": true,
+					"Tipos de datos de la petición": true,
+					"La ciudad de la petición tiene un ID no nulo que es un número válido mayor a 0": true,
+					"La categoría de la petición tiene un ID no nulo que es un número válido mayor a 0": true,
+					"Las imágenes de la petición no tienen ID": true,
+					"Las características de la petición tienen un ID no nulo que es un número válido mayor a 0": true,
+					"La respuesta es correcta, tiene body y es un JSON": true,
+					"Body de la respuesta no vacío": true,
+					"Respuesta con los atributos esperados": true,
+					"Tipos de datos de la respuesta": true,
+					"El ID obtenido es un número válido mayor a 0": true,
+					"La ciudad de la respuesta tiene un ID no nulo que es un número válido mayor a 0": true,
+					"La categoría de la respuesta tiene un ID no nulo que es un número válido mayor a 0": true,
+					"Las imágenes de la respuesta tienen un ID no nulo que es un número válido mayor a 0": true,
+					"Las características de la respuesta tienen un ID no nulo que es un número válido mayor a 0": true,
+					"Los datos recibidos coinciden con los enviados": true
+				}
+			]
+		},
+		{
+			"id": "217d09db-ee46-452e-9e69-bdf90b128861",
+			"name": "POST Con ID",
+			"url": "http://localhost:8080/productos",
+			"time": 5,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"El método es de tipo POST": true,
+				"La URL de la petición es la esperada": true,
+				"Existe la propiedad Content-Type en el encabezado de la petición y es igual a 'application/json'": true,
+				"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": true,
+				"Tiempo de respuesta menor a 200 ms": true,
+				"Status igual a '400 Bad Request'": true,
+				"Petición con los atributos esperados": true,
+				"Tipos de datos de la petición": true,
+				"La ciudad de la petición tiene un ID no nulo que es un número válido mayor a 0": true,
+				"La categoría de la petición tiene un ID no nulo que es un número válido mayor a 0": true,
+				"Las imágenes de la petición no tienen ID": true,
+				"Las características de la petición tienen un ID no nulo que es un número válido mayor a 0": true,
+				"La respuesta es errónea, tiene body y es un JSON": true,
+				"Body de la respuesta no vacío": true,
+				"Respuesta con los atributos esperados": true,
+				"Tipos de datos de la respuesta": true,
+				"Status con código 400": true,
+				"Error con texto 'no puede recibir un ID'": true
+			},
+			"testPassFailCounts": {
+				"El método es de tipo POST": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La URL de la petición es la esperada": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Existe la propiedad Content-Type en el encabezado de la petición y es igual a 'application/json'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tiempo de respuesta menor a 200 ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status igual a '400 Bad Request'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Petición con los atributos esperados": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tipos de datos de la petición": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La ciudad de la petición tiene un ID no nulo que es un número válido mayor a 0": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La categoría de la petición tiene un ID no nulo que es un número válido mayor a 0": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Las imágenes de la petición no tienen ID": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Las características de la petición tienen un ID no nulo que es un número válido mayor a 0": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La respuesta es errónea, tiene body y es un JSON": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body de la respuesta no vacío": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Respuesta con los atributos esperados": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tipos de datos de la respuesta": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status con código 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error con texto 'no puede recibir un ID'": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				5
+			],
+			"allTests": [
+				{
+					"El método es de tipo POST": true,
+					"La URL de la petición es la esperada": true,
+					"Existe la propiedad Content-Type en el encabezado de la petición y es igual a 'application/json'": true,
+					"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": true,
+					"Tiempo de respuesta menor a 200 ms": true,
+					"Status igual a '400 Bad Request'": true,
+					"Petición con los atributos esperados": true,
+					"Tipos de datos de la petición": true,
+					"La ciudad de la petición tiene un ID no nulo que es un número válido mayor a 0": true,
+					"La categoría de la petición tiene un ID no nulo que es un número válido mayor a 0": true,
+					"Las imágenes de la petición no tienen ID": true,
+					"Las características de la petición tienen un ID no nulo que es un número válido mayor a 0": true,
+					"La respuesta es errónea, tiene body y es un JSON": true,
+					"Body de la respuesta no vacío": true,
+					"Respuesta con los atributos esperados": true,
+					"Tipos de datos de la respuesta": true,
+					"Status con código 400": true,
+					"Error con texto 'no puede recibir un ID'": true
+				}
+			]
+		},
+		{
+			"id": "ffdd3ab0-7183-44c3-980b-87abb115db96",
+			"name": "GET ONE",
+			"url": "http://localhost:8080/productos/2",
+			"time": 11,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"El método es de tipo GET": true,
+				"La URL de la petición es la esperada": true,
+				"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": true,
+				"Tiempo de respuesta menor a 200 ms": true,
+				"Status igual a '200 OK'": true,
+				"Body de la petición vacío": true,
+				"La respuesta es correcta, tiene body y es un JSON": true,
+				"Body de la respuesta no vacío": true,
+				"Respuesta con los atributos esperados": true,
+				"Tipos de datos de la respuesta": true,
+				"El ID obtenido es un número válido mayor a 0": true,
+				"El ID recibido es igual al enviado": true,
+				"La ciudad de la respuesta tiene un ID no nulo que es un número válido mayor a 0": true,
+				"La categoría de la respuesta tiene un ID no nulo que es un número válido mayor a 0": true,
+				"Las imágenes de la respuesta tienen un ID no nulo que es un número válido mayor a 0": true,
+				"Las características de la respuesta tienen un ID no nulo que es un número válido mayor a 0": true
+			},
+			"testPassFailCounts": {
+				"El método es de tipo GET": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La URL de la petición es la esperada": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tiempo de respuesta menor a 200 ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status igual a '200 OK'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body de la petición vacío": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La respuesta es correcta, tiene body y es un JSON": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body de la respuesta no vacío": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Respuesta con los atributos esperados": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tipos de datos de la respuesta": {
+					"pass": 1,
+					"fail": 0
+				},
+				"El ID obtenido es un número válido mayor a 0": {
+					"pass": 1,
+					"fail": 0
+				},
+				"El ID recibido es igual al enviado": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La ciudad de la respuesta tiene un ID no nulo que es un número válido mayor a 0": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La categoría de la respuesta tiene un ID no nulo que es un número válido mayor a 0": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Las imágenes de la respuesta tienen un ID no nulo que es un número válido mayor a 0": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Las características de la respuesta tienen un ID no nulo que es un número válido mayor a 0": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				11
+			],
+			"allTests": [
+				{
+					"El método es de tipo GET": true,
+					"La URL de la petición es la esperada": true,
+					"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": true,
+					"Tiempo de respuesta menor a 200 ms": true,
+					"Status igual a '200 OK'": true,
+					"Body de la petición vacío": true,
+					"La respuesta es correcta, tiene body y es un JSON": true,
+					"Body de la respuesta no vacío": true,
+					"Respuesta con los atributos esperados": true,
+					"Tipos de datos de la respuesta": true,
+					"El ID obtenido es un número válido mayor a 0": true,
+					"El ID recibido es igual al enviado": true,
+					"La ciudad de la respuesta tiene un ID no nulo que es un número válido mayor a 0": true,
+					"La categoría de la respuesta tiene un ID no nulo que es un número válido mayor a 0": true,
+					"Las imágenes de la respuesta tienen un ID no nulo que es un número válido mayor a 0": true,
+					"Las características de la respuesta tienen un ID no nulo que es un número válido mayor a 0": true
+				}
+			]
+		},
+		{
+			"id": "b89ccc4c-abaa-4917-8617-9f56cded2ef7",
+			"name": "GET ONE Inexistente",
+			"url": "http://localhost:8080/productos/9999",
+			"time": 7,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"El método es de tipo GET": true,
+				"La URL de la petición es la esperada": true,
+				"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": true,
+				"Tiempo de respuesta menor a 200 ms": true,
+				"Status igual a '404 Not Found'": true,
+				"Body de la petición vacío": true,
+				"La respuesta es un error, tiene body y es un JSON": true,
+				"Body de la respuesta no vacío": true,
+				"Respuesta con los atributos esperados": true,
+				"Tipos de datos de la respuesta": true,
+				"Status con código 404": true,
+				"Error con texto 'no existe'": true
+			},
+			"testPassFailCounts": {
+				"El método es de tipo GET": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La URL de la petición es la esperada": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tiempo de respuesta menor a 200 ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status igual a '404 Not Found'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body de la petición vacío": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La respuesta es un error, tiene body y es un JSON": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body de la respuesta no vacío": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Respuesta con los atributos esperados": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tipos de datos de la respuesta": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status con código 404": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error con texto 'no existe'": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				7
+			],
+			"allTests": [
+				{
+					"El método es de tipo GET": true,
+					"La URL de la petición es la esperada": true,
+					"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": true,
+					"Tiempo de respuesta menor a 200 ms": true,
+					"Status igual a '404 Not Found'": true,
+					"Body de la petición vacío": true,
+					"La respuesta es un error, tiene body y es un JSON": true,
+					"Body de la respuesta no vacío": true,
+					"Respuesta con los atributos esperados": true,
+					"Tipos de datos de la respuesta": true,
+					"Status con código 404": true,
+					"Error con texto 'no existe'": true
+				}
+			]
+		},
+		{
+			"id": "ba7e27d0-18e2-4c25-9bce-96c2bf38847d",
+			"name": "GET ALL",
+			"url": "http://localhost:8080/productos",
+			"time": 17,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"El método es de tipo GET": true,
+				"La URL de la petición es la esperada": true,
+				"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": true,
+				"Tiempo de respuesta menor a 200 ms": true,
+				"Status igual a '200 OK'": true,
+				"Body de la petición vacío": true,
+				"La respuesta es correcta, tiene body y es un JSON": true,
+				"Body de la respuesta no vacío": true,
+				"Respuesta es un array": true,
+				"Array con al menos 3 elementos": true,
+				"Elementos del array con los atributos esperados": true,
+				"Tipos de datos de los elementos del array": true,
+				"Los ID's obtenidos son números válidos mayores a 0": true,
+				"Las ciudades de la respuesta tienen un ID no nulo que es un número válido mayor a 0": true,
+				"Las categorías de la respuesta tienen un ID no nulo que es un número válido mayor a 0": true,
+				"Las imágenes de la respuesta tienen un ID no nulo que es un número válido mayor a 0": true,
+				"Las características de la respuesta tienen un ID no nulo que es un número válido mayor a 0": true
+			},
+			"testPassFailCounts": {
+				"El método es de tipo GET": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La URL de la petición es la esperada": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tiempo de respuesta menor a 200 ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status igual a '200 OK'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body de la petición vacío": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La respuesta es correcta, tiene body y es un JSON": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body de la respuesta no vacío": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Respuesta es un array": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Array con al menos 3 elementos": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Elementos del array con los atributos esperados": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tipos de datos de los elementos del array": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Los ID's obtenidos son números válidos mayores a 0": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Las ciudades de la respuesta tienen un ID no nulo que es un número válido mayor a 0": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Las categorías de la respuesta tienen un ID no nulo que es un número válido mayor a 0": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Las imágenes de la respuesta tienen un ID no nulo que es un número válido mayor a 0": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Las características de la respuesta tienen un ID no nulo que es un número válido mayor a 0": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				17
+			],
+			"allTests": [
+				{
+					"El método es de tipo GET": true,
+					"La URL de la petición es la esperada": true,
+					"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": true,
+					"Tiempo de respuesta menor a 200 ms": true,
+					"Status igual a '200 OK'": true,
+					"Body de la petición vacío": true,
+					"La respuesta es correcta, tiene body y es un JSON": true,
+					"Body de la respuesta no vacío": true,
+					"Respuesta es un array": true,
+					"Array con al menos 3 elementos": true,
+					"Elementos del array con los atributos esperados": true,
+					"Tipos de datos de los elementos del array": true,
+					"Los ID's obtenidos son números válidos mayores a 0": true,
+					"Las ciudades de la respuesta tienen un ID no nulo que es un número válido mayor a 0": true,
+					"Las categorías de la respuesta tienen un ID no nulo que es un número válido mayor a 0": true,
+					"Las imágenes de la respuesta tienen un ID no nulo que es un número válido mayor a 0": true,
+					"Las características de la respuesta tienen un ID no nulo que es un número válido mayor a 0": true
+				}
+			]
+		},
+		{
+			"id": "3884ce9c-6b6a-4952-8e1e-b5fb757d0e72",
+			"name": "PUT",
+			"url": "http://localhost:8080/productos",
+			"time": 21,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"El método es de tipo PUT": true,
+				"La URL de la petición es la esperada": true,
+				"Existe la propiedad Content-Type en el encabezado de la petición y es igual a 'application/json'": true,
+				"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": true,
+				"Tiempo de respuesta menor a 200 ms": true,
+				"Status igual a '200 OK'": true,
+				"Petición con los atributos esperados": true,
+				"Tipos de datos de la petición": true,
+				"La ciudad de la petición tiene un ID no nulo que es un número válido mayor a 0": true,
+				"La categoría de la petición tiene un ID no nulo que es un número válido mayor a 0": true,
+				"Las imágenes de la petición no tienen ID": true,
+				"Las características de la petición tienen un ID no nulo que es un número válido mayor a 0": true,
+				"La respuesta es correcta, tiene body y es un JSON": true,
+				"Body de la respuesta no vacío": true,
+				"Respuesta con los atributos esperados": true,
+				"Tipos de datos de la respuesta": true,
+				"El ID obtenido es un número válido mayor a 0": true,
+				"La ciudad de la respuesta tiene un ID no nulo que es un número válido mayor a 0": true,
+				"La categoría de la respuesta tiene un ID no nulo que es un número válido mayor a 0": true,
+				"Las imágenes de la respuesta tienen un ID no nulo que es un número válido mayor a 0": true,
+				"Las características de la respuesta tienen un ID no nulo que es un número válido mayor a 0": true,
+				"Los datos recibidos coinciden con los enviados": true
+			},
+			"testPassFailCounts": {
+				"El método es de tipo PUT": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La URL de la petición es la esperada": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Existe la propiedad Content-Type en el encabezado de la petición y es igual a 'application/json'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tiempo de respuesta menor a 200 ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status igual a '200 OK'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Petición con los atributos esperados": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tipos de datos de la petición": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La ciudad de la petición tiene un ID no nulo que es un número válido mayor a 0": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La categoría de la petición tiene un ID no nulo que es un número válido mayor a 0": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Las imágenes de la petición no tienen ID": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Las características de la petición tienen un ID no nulo que es un número válido mayor a 0": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La respuesta es correcta, tiene body y es un JSON": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body de la respuesta no vacío": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Respuesta con los atributos esperados": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tipos de datos de la respuesta": {
+					"pass": 1,
+					"fail": 0
+				},
+				"El ID obtenido es un número válido mayor a 0": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La ciudad de la respuesta tiene un ID no nulo que es un número válido mayor a 0": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La categoría de la respuesta tiene un ID no nulo que es un número válido mayor a 0": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Las imágenes de la respuesta tienen un ID no nulo que es un número válido mayor a 0": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Las características de la respuesta tienen un ID no nulo que es un número válido mayor a 0": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Los datos recibidos coinciden con los enviados": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				21
+			],
+			"allTests": [
+				{
+					"El método es de tipo PUT": true,
+					"La URL de la petición es la esperada": true,
+					"Existe la propiedad Content-Type en el encabezado de la petición y es igual a 'application/json'": true,
+					"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": true,
+					"Tiempo de respuesta menor a 200 ms": true,
+					"Status igual a '200 OK'": true,
+					"Petición con los atributos esperados": true,
+					"Tipos de datos de la petición": true,
+					"La ciudad de la petición tiene un ID no nulo que es un número válido mayor a 0": true,
+					"La categoría de la petición tiene un ID no nulo que es un número válido mayor a 0": true,
+					"Las imágenes de la petición no tienen ID": true,
+					"Las características de la petición tienen un ID no nulo que es un número válido mayor a 0": true,
+					"La respuesta es correcta, tiene body y es un JSON": true,
+					"Body de la respuesta no vacío": true,
+					"Respuesta con los atributos esperados": true,
+					"Tipos de datos de la respuesta": true,
+					"El ID obtenido es un número válido mayor a 0": true,
+					"La ciudad de la respuesta tiene un ID no nulo que es un número válido mayor a 0": true,
+					"La categoría de la respuesta tiene un ID no nulo que es un número válido mayor a 0": true,
+					"Las imágenes de la respuesta tienen un ID no nulo que es un número válido mayor a 0": true,
+					"Las características de la respuesta tienen un ID no nulo que es un número válido mayor a 0": true,
+					"Los datos recibidos coinciden con los enviados": true
+				}
+			]
+		},
+		{
+			"id": "6efb1880-38ff-4654-bd67-2f121902aa0a",
+			"name": "PUT Sin ID",
+			"url": "http://localhost:8080/productos",
+			"time": 7,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"El método es de tipo PUT": true,
+				"La URL de la petición es la esperada": true,
+				"Existe la propiedad Content-Type en el encabezado de la petición y es igual a 'application/json'": true,
+				"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": true,
+				"Tiempo de respuesta menor a 200 ms": true,
+				"Status igual a '400 Bad Request'": true,
+				"Petición con los atributos esperados": true,
+				"Tipos de datos de la petición": true,
+				"La ciudad de la petición tiene un ID no nulo que es un número válido mayor a 0": true,
+				"La categoría de la petición tiene un ID no nulo que es un número válido mayor a 0": true,
+				"Las imágenes de la petición no tienen ID": true,
+				"Las características de la petición tienen un ID no nulo que es un número válido mayor a 0": true,
+				"La respuesta es correcta, tiene body y es un JSON": true,
+				"Body de la respuesta no vacío": true,
+				"Respuesta con los atributos esperados": true,
+				"Tipos de datos de la respuesta": true,
+				"Status con código 400": true,
+				"Error con texto 'no puede recibir un ID'": true
+			},
+			"testPassFailCounts": {
+				"El método es de tipo PUT": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La URL de la petición es la esperada": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Existe la propiedad Content-Type en el encabezado de la petición y es igual a 'application/json'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tiempo de respuesta menor a 200 ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status igual a '400 Bad Request'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Petición con los atributos esperados": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tipos de datos de la petición": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La ciudad de la petición tiene un ID no nulo que es un número válido mayor a 0": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La categoría de la petición tiene un ID no nulo que es un número válido mayor a 0": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Las imágenes de la petición no tienen ID": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Las características de la petición tienen un ID no nulo que es un número válido mayor a 0": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La respuesta es correcta, tiene body y es un JSON": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body de la respuesta no vacío": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Respuesta con los atributos esperados": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tipos de datos de la respuesta": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status con código 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error con texto 'no puede recibir un ID'": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				7
+			],
+			"allTests": [
+				{
+					"El método es de tipo PUT": true,
+					"La URL de la petición es la esperada": true,
+					"Existe la propiedad Content-Type en el encabezado de la petición y es igual a 'application/json'": true,
+					"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": true,
+					"Tiempo de respuesta menor a 200 ms": true,
+					"Status igual a '400 Bad Request'": true,
+					"Petición con los atributos esperados": true,
+					"Tipos de datos de la petición": true,
+					"La ciudad de la petición tiene un ID no nulo que es un número válido mayor a 0": true,
+					"La categoría de la petición tiene un ID no nulo que es un número válido mayor a 0": true,
+					"Las imágenes de la petición no tienen ID": true,
+					"Las características de la petición tienen un ID no nulo que es un número válido mayor a 0": true,
+					"La respuesta es correcta, tiene body y es un JSON": true,
+					"Body de la respuesta no vacío": true,
+					"Respuesta con los atributos esperados": true,
+					"Tipos de datos de la respuesta": true,
+					"Status con código 400": true,
+					"Error con texto 'no puede recibir un ID'": true
+				}
+			]
+		},
+		{
+			"id": "936bd53d-c52d-4da5-a5e6-04fc07f65b80",
+			"name": "GET By Ciudad",
+			"url": "http://localhost:8080/productos/buscar?ciudad=Mendoza",
+			"time": 29,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"El método es de tipo GET": true,
+				"La URL de la petición es la esperada": true,
+				"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": true,
+				"Tiempo de respuesta menor a 200 ms": true,
+				"Status igual a '200 OK'": true,
+				"Body de la petición vacío": true,
+				"La respuesta es correcta, tiene body y es un JSON": true,
+				"Body de la respuesta no vacío": true,
+				"Respuesta es un array": true,
+				"Array con al menos 2 elementos": true,
+				"Elementos del array con los atributos esperados": true,
+				"Tipos de datos de los elementos del array": true,
+				"Los ID's obtenidos son números válidos mayores a 0": true,
+				"Las ciudades de la respuesta tienen un ID no nulo que es un número válido mayor a 0": true,
+				"Las categorías de la respuesta tienen un ID no nulo que es un número válido mayor a 0": true,
+				"Las imágenes de la respuesta tienen un ID no nulo que es un número válido mayor a 0": true,
+				"Las características de la respuesta tienen un ID no nulo que es un número válido mayor a 0": true,
+				"Las ciudades de la respuesta tienen como nombre el parámetro proporcionado": true
+			},
+			"testPassFailCounts": {
+				"El método es de tipo GET": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La URL de la petición es la esperada": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tiempo de respuesta menor a 200 ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status igual a '200 OK'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body de la petición vacío": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La respuesta es correcta, tiene body y es un JSON": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body de la respuesta no vacío": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Respuesta es un array": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Array con al menos 2 elementos": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Elementos del array con los atributos esperados": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tipos de datos de los elementos del array": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Los ID's obtenidos son números válidos mayores a 0": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Las ciudades de la respuesta tienen un ID no nulo que es un número válido mayor a 0": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Las categorías de la respuesta tienen un ID no nulo que es un número válido mayor a 0": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Las imágenes de la respuesta tienen un ID no nulo que es un número válido mayor a 0": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Las características de la respuesta tienen un ID no nulo que es un número válido mayor a 0": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Las ciudades de la respuesta tienen como nombre el parámetro proporcionado": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				29
+			],
+			"allTests": [
+				{
+					"El método es de tipo GET": true,
+					"La URL de la petición es la esperada": true,
+					"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": true,
+					"Tiempo de respuesta menor a 200 ms": true,
+					"Status igual a '200 OK'": true,
+					"Body de la petición vacío": true,
+					"La respuesta es correcta, tiene body y es un JSON": true,
+					"Body de la respuesta no vacío": true,
+					"Respuesta es un array": true,
+					"Array con al menos 2 elementos": true,
+					"Elementos del array con los atributos esperados": true,
+					"Tipos de datos de los elementos del array": true,
+					"Los ID's obtenidos son números válidos mayores a 0": true,
+					"Las ciudades de la respuesta tienen un ID no nulo que es un número válido mayor a 0": true,
+					"Las categorías de la respuesta tienen un ID no nulo que es un número válido mayor a 0": true,
+					"Las imágenes de la respuesta tienen un ID no nulo que es un número válido mayor a 0": true,
+					"Las características de la respuesta tienen un ID no nulo que es un número válido mayor a 0": true,
+					"Las ciudades de la respuesta tienen como nombre el parámetro proporcionado": true
+				}
+			]
+		},
+		{
+			"id": "1af7f7c2-062b-4a32-849e-f92f23aaf561",
+			"name": "GET By Categoria",
+			"url": "http://localhost:8080/productos/buscar?categoria=Hotel+Urbano",
+			"time": 14,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"El método es de tipo GET": true,
+				"La URL de la petición es la esperada": true,
+				"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": true,
+				"Tiempo de respuesta menor a 200 ms": true,
+				"Status igual a '200 OK'": true,
+				"Body de la petición vacío": true,
+				"La respuesta es correcta, tiene body y es un JSON": true,
+				"Body de la respuesta no vacío": true,
+				"Respuesta es un array": true,
+				"Array con al menos 2 elementos": true,
+				"Elementos del array con los atributos esperados": true,
+				"Tipos de datos de los elementos del array": true,
+				"Los ID's obtenidos son números válidos mayores a 0": true,
+				"Las ciudades de la respuesta tienen un ID no nulo que es un número válido mayor a 0": true,
+				"Las categorías de la respuesta tienen un ID no nulo que es un número válido mayor a 0": true,
+				"Las imágenes de la respuesta tienen un ID no nulo que es un número válido mayor a 0": true,
+				"Las características de la respuesta tienen un ID no nulo que es un número válido mayor a 0": true,
+				"Las categorías de la respuesta tienen como título el parámetro proporcionado": true
+			},
+			"testPassFailCounts": {
+				"El método es de tipo GET": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La URL de la petición es la esperada": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tiempo de respuesta menor a 200 ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status igual a '200 OK'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body de la petición vacío": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La respuesta es correcta, tiene body y es un JSON": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body de la respuesta no vacío": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Respuesta es un array": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Array con al menos 2 elementos": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Elementos del array con los atributos esperados": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tipos de datos de los elementos del array": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Los ID's obtenidos son números válidos mayores a 0": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Las ciudades de la respuesta tienen un ID no nulo que es un número válido mayor a 0": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Las categorías de la respuesta tienen un ID no nulo que es un número válido mayor a 0": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Las imágenes de la respuesta tienen un ID no nulo que es un número válido mayor a 0": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Las características de la respuesta tienen un ID no nulo que es un número válido mayor a 0": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Las categorías de la respuesta tienen como título el parámetro proporcionado": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				14
+			],
+			"allTests": [
+				{
+					"El método es de tipo GET": true,
+					"La URL de la petición es la esperada": true,
+					"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": true,
+					"Tiempo de respuesta menor a 200 ms": true,
+					"Status igual a '200 OK'": true,
+					"Body de la petición vacío": true,
+					"La respuesta es correcta, tiene body y es un JSON": true,
+					"Body de la respuesta no vacío": true,
+					"Respuesta es un array": true,
+					"Array con al menos 2 elementos": true,
+					"Elementos del array con los atributos esperados": true,
+					"Tipos de datos de los elementos del array": true,
+					"Los ID's obtenidos son números válidos mayores a 0": true,
+					"Las ciudades de la respuesta tienen un ID no nulo que es un número válido mayor a 0": true,
+					"Las categorías de la respuesta tienen un ID no nulo que es un número válido mayor a 0": true,
+					"Las imágenes de la respuesta tienen un ID no nulo que es un número válido mayor a 0": true,
+					"Las características de la respuesta tienen un ID no nulo que es un número válido mayor a 0": true,
+					"Las categorías de la respuesta tienen como título el parámetro proporcionado": true
+				}
+			]
+		},
+		{
+			"id": "26de076f-748f-4b6f-88a6-1909c8d45854",
+			"name": "GET By Ciudad & Categoria",
+			"url": "http://localhost:8080/productos/buscar?ciudad=Mendoza&categoria=Hotel+Urbano",
+			"time": 8,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"El método es de tipo GET": true,
+				"La URL de la petición es la esperada": true,
+				"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": true,
+				"Tiempo de respuesta menor a 200 ms": true,
+				"Status igual a '200 OK'": true,
+				"Body de la petición vacío": true,
+				"La respuesta es correcta, tiene body y es un JSON": true,
+				"Body de la respuesta no vacío": true,
+				"Respuesta es un array": true,
+				"Array con al menos 3 elementos": true,
+				"Elementos del array con los atributos esperados": true,
+				"Tipos de datos de los elementos del array": true,
+				"Los ID's obtenidos son números válidos mayores a 0": true,
+				"Las ciudades de la respuesta tienen un ID no nulo que es un número válido mayor a 0": true,
+				"Las categorías de la respuesta tienen un ID no nulo que es un número válido mayor a 0": true,
+				"Las imágenes de la respuesta tienen un ID no nulo que es un número válido mayor a 0": true,
+				"Las características de la respuesta tienen un ID no nulo que es un número válido mayor a 0": true,
+				"Las ciudades de la respuesta tienen como nombre el parámetro proporcionado": true,
+				"Las categorías de la respuesta tienen como título el parámetro proporcionado": true
+			},
+			"testPassFailCounts": {
+				"El método es de tipo GET": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La URL de la petición es la esperada": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tiempo de respuesta menor a 200 ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status igual a '200 OK'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body de la petición vacío": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La respuesta es correcta, tiene body y es un JSON": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body de la respuesta no vacío": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Respuesta es un array": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Array con al menos 3 elementos": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Elementos del array con los atributos esperados": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tipos de datos de los elementos del array": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Los ID's obtenidos son números válidos mayores a 0": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Las ciudades de la respuesta tienen un ID no nulo que es un número válido mayor a 0": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Las categorías de la respuesta tienen un ID no nulo que es un número válido mayor a 0": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Las imágenes de la respuesta tienen un ID no nulo que es un número válido mayor a 0": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Las características de la respuesta tienen un ID no nulo que es un número válido mayor a 0": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Las ciudades de la respuesta tienen como nombre el parámetro proporcionado": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Las categorías de la respuesta tienen como título el parámetro proporcionado": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				8
+			],
+			"allTests": [
+				{
+					"El método es de tipo GET": true,
+					"La URL de la petición es la esperada": true,
+					"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": true,
+					"Tiempo de respuesta menor a 200 ms": true,
+					"Status igual a '200 OK'": true,
+					"Body de la petición vacío": true,
+					"La respuesta es correcta, tiene body y es un JSON": true,
+					"Body de la respuesta no vacío": true,
+					"Respuesta es un array": true,
+					"Array con al menos 3 elementos": true,
+					"Elementos del array con los atributos esperados": true,
+					"Tipos de datos de los elementos del array": true,
+					"Los ID's obtenidos son números válidos mayores a 0": true,
+					"Las ciudades de la respuesta tienen un ID no nulo que es un número válido mayor a 0": true,
+					"Las categorías de la respuesta tienen un ID no nulo que es un número válido mayor a 0": true,
+					"Las imágenes de la respuesta tienen un ID no nulo que es un número válido mayor a 0": true,
+					"Las características de la respuesta tienen un ID no nulo que es un número válido mayor a 0": true,
+					"Las ciudades de la respuesta tienen como nombre el parámetro proporcionado": true,
+					"Las categorías de la respuesta tienen como título el parámetro proporcionado": true
+				}
+			]
+		},
+		{
+			"id": "ed943909-9f4b-44e5-aae5-c594e42d2478",
+			"name": "Add imagenes",
+			"url": "http://localhost:8080/productos/2/agregar-imagenes",
+			"time": 17,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"El método es de tipo PUT": true,
+				"La URL de la petición es la esperada": true,
+				"Existe la propiedad Content-Type en el encabezado de la petición y es igual a 'application/json'": true,
+				"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": true,
+				"Tiempo de respuesta menor a 200 ms": true,
+				"Status igual a '200 OK'": true,
+				"Petición es un array": true,
+				"Array con al menos 1 elemento": true,
+				"Elementos del array con los atributos esperados": true,
+				"Tipos de datos de los elementos del array": true,
+				"La respuesta es correcta, tiene body y es un JSON": true,
+				"Body de la respuesta no vacío": true,
+				"Respuesta con los atributos esperados": true,
+				"Tipos de datos de la respuesta": true,
+				"El ID obtenido es un número válido mayor a 0": true,
+				"El ID recibido es igual al enviado": true,
+				"La ciudad de la respuesta tiene un ID no nulo que es un número válido mayor a 0": true,
+				"La categoría de la respuesta tiene un ID no nulo que es un número válido mayor a 0": true,
+				"Las imágenes de la respuesta tienen un ID no nulo que es un número válido mayor a 0": true,
+				"Las características de la respuesta tienen un ID no nulo que es un número válido mayor a 0": true,
+				"Las imágenes enviadas fueron insertadas": true
+			},
+			"testPassFailCounts": {
+				"El método es de tipo PUT": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La URL de la petición es la esperada": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Existe la propiedad Content-Type en el encabezado de la petición y es igual a 'application/json'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tiempo de respuesta menor a 200 ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status igual a '200 OK'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Petición es un array": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Array con al menos 1 elemento": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Elementos del array con los atributos esperados": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tipos de datos de los elementos del array": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La respuesta es correcta, tiene body y es un JSON": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body de la respuesta no vacío": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Respuesta con los atributos esperados": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tipos de datos de la respuesta": {
+					"pass": 1,
+					"fail": 0
+				},
+				"El ID obtenido es un número válido mayor a 0": {
+					"pass": 1,
+					"fail": 0
+				},
+				"El ID recibido es igual al enviado": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La ciudad de la respuesta tiene un ID no nulo que es un número válido mayor a 0": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La categoría de la respuesta tiene un ID no nulo que es un número válido mayor a 0": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Las imágenes de la respuesta tienen un ID no nulo que es un número válido mayor a 0": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Las características de la respuesta tienen un ID no nulo que es un número válido mayor a 0": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Las imágenes enviadas fueron insertadas": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				17
+			],
+			"allTests": [
+				{
+					"El método es de tipo PUT": true,
+					"La URL de la petición es la esperada": true,
+					"Existe la propiedad Content-Type en el encabezado de la petición y es igual a 'application/json'": true,
+					"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": true,
+					"Tiempo de respuesta menor a 200 ms": true,
+					"Status igual a '200 OK'": true,
+					"Petición es un array": true,
+					"Array con al menos 1 elemento": true,
+					"Elementos del array con los atributos esperados": true,
+					"Tipos de datos de los elementos del array": true,
+					"La respuesta es correcta, tiene body y es un JSON": true,
+					"Body de la respuesta no vacío": true,
+					"Respuesta con los atributos esperados": true,
+					"Tipos de datos de la respuesta": true,
+					"El ID obtenido es un número válido mayor a 0": true,
+					"El ID recibido es igual al enviado": true,
+					"La ciudad de la respuesta tiene un ID no nulo que es un número válido mayor a 0": true,
+					"La categoría de la respuesta tiene un ID no nulo que es un número válido mayor a 0": true,
+					"Las imágenes de la respuesta tienen un ID no nulo que es un número válido mayor a 0": true,
+					"Las características de la respuesta tienen un ID no nulo que es un número válido mayor a 0": true,
+					"Las imágenes enviadas fueron insertadas": true
+				}
+			]
+		},
+		{
+			"id": "996600cb-962e-417c-872b-67ae82088747",
+			"name": "Remove imagenes",
+			"url": "http://localhost:8080/productos/2/eliminar-imagenes",
+			"time": 16,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"El método es de tipo PUT": true,
+				"La URL de la petición es la esperada": true,
+				"Existe la propiedad Content-Type en el encabezado de la petición y es igual a 'application/json'": true,
+				"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": true,
+				"Tiempo de respuesta menor a 200 ms": true,
+				"Status igual a '200 OK'": true,
+				"Petición es un array": true,
+				"Array con al menos 1 elemento": true,
+				"Elementos del array con los atributos esperados": true,
+				"Tipos de datos de los elementos del array": true,
+				"La respuesta es correcta, tiene body y es un JSON": true,
+				"Body de la respuesta no vacío": true,
+				"Respuesta con los atributos esperados": true,
+				"Tipos de datos de la respuesta": true,
+				"El ID obtenido es un número válido mayor a 0": true,
+				"El ID recibido es igual al enviado": true,
+				"La ciudad de la respuesta tiene un ID no nulo que es un número válido mayor a 0": true,
+				"La categoría de la respuesta tiene un ID no nulo que es un número válido mayor a 0": true,
+				"Las imágenes de la respuesta tienen un ID no nulo que es un número válido mayor a 0": true,
+				"Las características de la respuesta tienen un ID no nulo que es un número válido mayor a 0": true,
+				"Las imágenes enviadas fueron eliminadas": true
+			},
+			"testPassFailCounts": {
+				"El método es de tipo PUT": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La URL de la petición es la esperada": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Existe la propiedad Content-Type en el encabezado de la petición y es igual a 'application/json'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tiempo de respuesta menor a 200 ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status igual a '200 OK'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Petición es un array": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Array con al menos 1 elemento": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Elementos del array con los atributos esperados": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tipos de datos de los elementos del array": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La respuesta es correcta, tiene body y es un JSON": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body de la respuesta no vacío": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Respuesta con los atributos esperados": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tipos de datos de la respuesta": {
+					"pass": 1,
+					"fail": 0
+				},
+				"El ID obtenido es un número válido mayor a 0": {
+					"pass": 1,
+					"fail": 0
+				},
+				"El ID recibido es igual al enviado": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La ciudad de la respuesta tiene un ID no nulo que es un número válido mayor a 0": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La categoría de la respuesta tiene un ID no nulo que es un número válido mayor a 0": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Las imágenes de la respuesta tienen un ID no nulo que es un número válido mayor a 0": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Las características de la respuesta tienen un ID no nulo que es un número válido mayor a 0": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Las imágenes enviadas fueron eliminadas": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				16
+			],
+			"allTests": [
+				{
+					"El método es de tipo PUT": true,
+					"La URL de la petición es la esperada": true,
+					"Existe la propiedad Content-Type en el encabezado de la petición y es igual a 'application/json'": true,
+					"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": true,
+					"Tiempo de respuesta menor a 200 ms": true,
+					"Status igual a '200 OK'": true,
+					"Petición es un array": true,
+					"Array con al menos 1 elemento": true,
+					"Elementos del array con los atributos esperados": true,
+					"Tipos de datos de los elementos del array": true,
+					"La respuesta es correcta, tiene body y es un JSON": true,
+					"Body de la respuesta no vacío": true,
+					"Respuesta con los atributos esperados": true,
+					"Tipos de datos de la respuesta": true,
+					"El ID obtenido es un número válido mayor a 0": true,
+					"El ID recibido es igual al enviado": true,
+					"La ciudad de la respuesta tiene un ID no nulo que es un número válido mayor a 0": true,
+					"La categoría de la respuesta tiene un ID no nulo que es un número válido mayor a 0": true,
+					"Las imágenes de la respuesta tienen un ID no nulo que es un número válido mayor a 0": true,
+					"Las características de la respuesta tienen un ID no nulo que es un número válido mayor a 0": true,
+					"Las imágenes enviadas fueron eliminadas": true
+				}
+			]
+		},
+		{
+			"id": "9db3c363-7347-43fe-bc25-3b0ec97cb718",
+			"name": "DELETE Exitoso",
+			"url": "http://localhost:8080/productos/4",
+			"time": 11,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"El método es de tipo DELETE": true,
+				"La URL de la petición es la esperada": true,
+				"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": true,
+				"Tiempo de respuesta menor a 200 ms": true,
+				"Status igual a '200 OK'": true,
+				"Body de la petición vacío": true,
+				"La respuesta es correcta, tiene body y es un JSON": true,
+				"Body de la respuesta no vacío": true,
+				"Respuesta con los atributos esperados": true,
+				"Tipos de datos de la respuesta": true,
+				"Mensaje con texto 'eliminado correctamente'": true
+			},
+			"testPassFailCounts": {
+				"El método es de tipo DELETE": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La URL de la petición es la esperada": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tiempo de respuesta menor a 200 ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status igual a '200 OK'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body de la petición vacío": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La respuesta es correcta, tiene body y es un JSON": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body de la respuesta no vacío": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Respuesta con los atributos esperados": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tipos de datos de la respuesta": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Mensaje con texto 'eliminado correctamente'": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				11
+			],
+			"allTests": [
+				{
+					"El método es de tipo DELETE": true,
+					"La URL de la petición es la esperada": true,
+					"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": true,
+					"Tiempo de respuesta menor a 200 ms": true,
+					"Status igual a '200 OK'": true,
+					"Body de la petición vacío": true,
+					"La respuesta es correcta, tiene body y es un JSON": true,
+					"Body de la respuesta no vacío": true,
+					"Respuesta con los atributos esperados": true,
+					"Tipos de datos de la respuesta": true,
+					"Mensaje con texto 'eliminado correctamente'": true
+				}
+			]
+		},
+		{
+			"id": "2c032456-7cbd-41f0-add7-b9aed7415601",
+			"name": "DELETE Inexistente",
+			"url": "http://localhost:8080/productos/9999",
+			"time": 6,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"El método es de tipo DELETE": true,
+				"La URL de la petición es la esperada": true,
+				"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": true,
+				"Tiempo de respuesta menor a 200 ms": true,
+				"Status igual a '404 Not Found'": true,
+				"Body de la petición vacío": true,
+				"La respuesta es errónea, tiene body y es un JSON": true,
+				"Body de la respuesta no vacío": true,
+				"Respuesta con los atributos esperados": true,
+				"Tipos de datos de la respuesta": true,
+				"Status con código 404": true,
+				"Error con texto 'no existe'": true
+			},
+			"testPassFailCounts": {
+				"El método es de tipo DELETE": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La URL de la petición es la esperada": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tiempo de respuesta menor a 200 ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status igual a '404 Not Found'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body de la petición vacío": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La respuesta es errónea, tiene body y es un JSON": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body de la respuesta no vacío": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Respuesta con los atributos esperados": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tipos de datos de la respuesta": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status con código 404": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error con texto 'no existe'": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				6
+			],
+			"allTests": [
+				{
+					"El método es de tipo DELETE": true,
+					"La URL de la petición es la esperada": true,
+					"Existe la propiedad Content-Type en el encabezado de la respuesta y es igual a 'application/json'": true,
+					"Tiempo de respuesta menor a 200 ms": true,
+					"Status igual a '404 Not Found'": true,
+					"Body de la petición vacío": true,
+					"La respuesta es errónea, tiene body y es un JSON": true,
+					"Body de la respuesta no vacío": true,
+					"Respuesta con los atributos esperados": true,
+					"Tipos de datos de la respuesta": true,
+					"Status con código 404": true,
+					"Error con texto 'no existe'": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 664,
+	"collection": {
+		"requests": [
+			{
+				"id": "9d74ec31-b71a-4fcf-9ef4-16b789c78c3f",
+				"method": "POST"
+			},
+			{
+				"id": "04f45534-9712-4336-999e-f4ed3154105a",
+				"method": "POST"
+			},
+			{
+				"id": "5ab80a4e-7cf4-42ce-837c-38a8dfb09a46",
+				"method": "GET"
+			},
+			{
+				"id": "74ebd152-76b1-43ed-b04a-126cef2f9047",
+				"method": "GET"
+			},
+			{
+				"id": "64bdffa5-ff04-4677-8e8e-28336c444009",
+				"method": "GET"
+			},
+			{
+				"id": "1999aeca-da4d-4e4c-a3e4-4d1e360679a3",
+				"method": "PUT"
+			},
+			{
+				"id": "07b766f1-bb79-4117-8c4a-8d13937245a3",
+				"method": "PUT"
+			},
+			{
+				"id": "34524c3b-29f2-41aa-8c5a-c70ade1f5338",
+				"method": "DELETE"
+			},
+			{
+				"id": "2bd5929f-db1b-408a-ac65-7a82ca93cbda",
+				"method": "DELETE"
+			},
+			{
+				"id": "71852842-86a8-43fd-aead-0db263f6aa92",
+				"method": "POST"
+			},
+			{
+				"id": "ad7f7b4f-6b04-43f9-add4-034871fbaac2",
+				"method": "POST"
+			},
+			{
+				"id": "371f6a85-bfa9-4883-9a02-e6eebce9870e",
+				"method": "GET"
+			},
+			{
+				"id": "71723e0c-fa07-4582-8a34-4c06997de579",
+				"method": "GET"
+			},
+			{
+				"id": "5ff5d237-bf51-4001-b7ca-4e4d6c8a06f9",
+				"method": "GET"
+			},
+			{
+				"id": "261e63a2-6c77-4522-8eb5-ca8d3e9f6252",
+				"method": "PUT"
+			},
+			{
+				"id": "b84896b0-ba02-4bf7-ab9a-2346e5acbc3c",
+				"method": "PUT"
+			},
+			{
+				"id": "127583a3-8b12-40d2-8284-347c77c68407",
+				"method": "DELETE"
+			},
+			{
+				"id": "0abc2379-a5a3-4032-ad2a-33934d210006",
+				"method": "DELETE"
+			},
+			{
+				"id": "46ef9dc2-544f-40d6-b0be-7ce9c24155d4",
+				"method": "POST"
+			},
+			{
+				"id": "2d899d09-a25b-4ed1-972e-a5912a4945bd",
+				"method": "POST"
+			},
+			{
+				"id": "6760910d-4546-4400-a8b2-f7735341363e",
+				"method": "GET"
+			},
+			{
+				"id": "f0d5048a-bb82-4b03-a016-94af07eb1f76",
+				"method": "GET"
+			},
+			{
+				"id": "f605e2d4-4783-4699-adf9-fa8e4d5083bf",
+				"method": "GET"
+			},
+			{
+				"id": "d889fd6e-aeed-4a8f-8b20-ececb37bc23e",
+				"method": "PUT"
+			},
+			{
+				"id": "8c8fbe84-fcc5-423d-83f7-9fe438da2b14",
+				"method": "PUT"
+			},
+			{
+				"id": "fa7a9623-ad6c-4ffd-b38f-7080e505f5e2",
+				"method": "DELETE"
+			},
+			{
+				"id": "1cfcd585-5d73-42e6-95b9-397439c3136c",
+				"method": "DELETE"
+			},
+			{
+				"id": "53030cad-41a8-4720-a3a0-27914d1361b5",
+				"method": "GET"
+			},
+			{
+				"id": "3a1e2df0-13db-4140-ab1c-3edc78517b90",
+				"method": "GET"
+			},
+			{
+				"id": "cad0644e-1f98-4f5c-8d30-6f53cd91f9be",
+				"method": "GET"
+			},
+			{
+				"id": "10f69378-40fb-490c-b44f-d6fdf588eee3",
+				"method": "POST"
+			},
+			{
+				"id": "217d09db-ee46-452e-9e69-bdf90b128861",
+				"method": "POST"
+			},
+			{
+				"id": "ffdd3ab0-7183-44c3-980b-87abb115db96",
+				"method": "GET"
+			},
+			{
+				"id": "b89ccc4c-abaa-4917-8617-9f56cded2ef7",
+				"method": "GET"
+			},
+			{
+				"id": "ba7e27d0-18e2-4c25-9bce-96c2bf38847d",
+				"method": "GET"
+			},
+			{
+				"id": "3884ce9c-6b6a-4952-8e1e-b5fb757d0e72",
+				"method": "PUT"
+			},
+			{
+				"id": "6efb1880-38ff-4654-bd67-2f121902aa0a",
+				"method": "PUT"
+			},
+			{
+				"id": "936bd53d-c52d-4da5-a5e6-04fc07f65b80",
+				"method": "GET"
+			},
+			{
+				"id": "1af7f7c2-062b-4a32-849e-f92f23aaf561",
+				"method": "GET"
+			},
+			{
+				"id": "26de076f-748f-4b6f-88a6-1909c8d45854",
+				"method": "GET"
+			},
+			{
+				"id": "ed943909-9f4b-44e5-aae5-c594e42d2478",
+				"method": "PUT"
+			},
+			{
+				"id": "996600cb-962e-417c-872b-67ae82088747",
+				"method": "PUT"
+			},
+			{
+				"id": "9db3c363-7347-43fe-bc25-3b0ec97cb718",
+				"method": "DELETE"
+			},
+			{
+				"id": "2c032456-7cbd-41f0-add7-b9aed7415601",
+				"method": "DELETE"
+			}
+		]
+	}
+}

@@ -1,0 +1,63 @@
+.contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.iconoPrev,
+.iconoNext {
+  background-color: var(--primary-color);
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.iconoPrev:hover,
+.iconoNext:hover {
+  background: var(--btn-hover);
+  text-shadow: 0 0 4px rgb(8, 85, 81);
+}
+
+.iconoPrev > i,
+.iconoNext > i {
+  font-size: 1.1rem;
+  color: var(--white);
+}
+
+.paginaNumeroContenedor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* min-width: 2.25rem; /*Para que no cambie la posición de las flechas al cambiar la cantidad de dígitos*/
+  min-width: 3.25rem; /* Para que no cambie la posición de las flechas al cambiar la cantidad de dígitos */
+  min-height: 2.25rem;
+  border-radius: 5px;
+  background-color: rgba(var(--primary-color-rgb), 0.6);
+}
+
+.paginaNumero {
+  color: var(--white);
+  font-size: 1.4rem;
+}
+
+.paginaTextoContenedor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+}
+
+.linkDeshabilitado {
+  pointer-events: none;
+}
+
+.botonDeshabilitado {
+  background-color: #cccccc;
+}

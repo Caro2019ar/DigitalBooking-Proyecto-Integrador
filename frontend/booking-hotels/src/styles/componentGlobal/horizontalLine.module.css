@@ -1,0 +1,25 @@
+.horizontalLine {
+  border-color: #00ffef;
+  margin: 15px auto;
+  border-width: 2px 0 0 0;
+  width: calc(100% + 2rem);
+  margin-left: -1rem;
+}
+
+/* Tablet */
+
+@media (min-width: 768px) {
+  .horizontalLine {
+    width: calc(100% + 2.8rem);
+    margin-left: -1.4rem;
+  }
+}
+
+/* Desktop */
+
+@media (min-width: 1200px) {
+  .horizontalLine {
+    width: calc(100% + 6rem);
+    margin-left: -3rem;
+  }
+}

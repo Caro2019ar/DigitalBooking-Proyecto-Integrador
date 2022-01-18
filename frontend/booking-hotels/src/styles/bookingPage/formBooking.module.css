@@ -1,0 +1,79 @@
+.container {
+  background: var(--background-gray);
+  padding: 1.5rem 0rem 0rem 0rem;
+  align-items: flex-start;
+}
+.container h2 {
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+}
+.form {
+  padding: 0.5rem 1rem 2rem 1rem;
+  background: var(--white);
+  border-radius: 8px;
+  box-shadow: var(--box-shadow);
+}
+.formActive {
+  background: var(--white);
+}
+.formGroup {
+  margin-top: 0;
+}
+.formGroup .label p {
+  font-weight: bold;
+}
+.formGroup input::placeholder {
+  color: var(--secondary-light);
+}
+input.formActive::placeholder {
+  color: #A9A9A9;
+}
+.formGroup textarea:focus {
+	outline: none;
+	border: 1px solid rgb(179, 179, 179);
+}
+.formDisabled {
+  background: var(--bone-color);
+  color: var(--black);
+}
+.text {
+  font-size: 0.75rem;
+}
+textarea.formActive {
+  height: 100px;
+}
+textarea.formActive::placeholder {
+  color: #A9A9A9;
+}
+
+.labelRadio {
+  margin-right: 1rem;
+  font-size: 0.75rem;
+}
+.radioButton {
+  margin-right: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  form.form {
+    width: 100%;
+  }
+  .formGroup {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .formGroup .formSubGroup {
+    width: 48.5%;
+  }
+  .vaccine {
+    padding-top: 0.9rem;
+  }
+  textarea.formActive {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+}

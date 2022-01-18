@@ -1,0 +1,17 @@
+.selectBuscador__value-container {
+    padding: 0;
+    cursor: "text"
+}
+
+.selectBuscador__input {
+    padding: 0;
+    margin: 0
+}
+
+.selectBuscador__placeholder {
+    color: "#A9A9A9";
+}
+
+.selectBuscador__indicators {
+    display: none !important;
+}

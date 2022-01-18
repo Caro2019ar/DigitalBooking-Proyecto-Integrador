@@ -1,0 +1,10 @@
+{
+    "nombre": "Admin",
+    "apellido": "Admin",
+    "email": "admin@admin.com",
+    "contrasena": "admin",
+    "rol": {
+        "id": 1
+    },
+    "habilitado": true
+}

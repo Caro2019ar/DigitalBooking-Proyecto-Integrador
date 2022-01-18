@@ -1,0 +1,60 @@
+.title {
+  margin-top: 30px;
+  color: var(--secondary-color);
+}
+
+.location {
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
+
+.imgMap {
+  width: 100%;
+}
+
+.infoBox {
+  width: 100%;
+  max-width: 180px;
+  background-color: var(--white);
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 1em 2.5em 1em 1em;
+  text-align: center;
+  border: 2px var(--primary-color) inset;
+  border-radius: 8px;
+}
+
+.infoBox > img {
+  width: 1rem !important;
+}
+
+
+/* Tablet */
+
+@media (min-width: 768px) {
+
+  /* .title,
+  .location,
+  .imgMap {
+    padding: 0 1.4rem;
+  } */
+
+  .infoBox {
+    width: 100%;
+    max-width: 270px;
+  }
+
+}
+
+
+/* Desktop */
+
+@media (min-width: 1200px) {
+
+  /* .title,
+  .location,
+  .imgMap {
+    padding: 0 3rem;
+  } */
+
+}

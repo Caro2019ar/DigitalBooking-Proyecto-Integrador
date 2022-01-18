@@ -1,0 +1,44 @@
+.featuresContainer {
+}
+
+.featuresContainer h2 {
+  font-weight: bold;
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+  /* padding: 0 3rem; */
+}
+.iconsContainer {
+  margin: 2rem 0 0 0;
+}
+.listContainer {
+  display: grid;
+  font-size: 0.9rem;
+  width: 100%;
+  margin: 0;
+  grid-template-columns: 50% 50%;
+}
+.listContainer li {
+  margin-bottom: 1rem;
+}
+
+.listContainer li span {
+  left: 0;
+}
+.listContainer li span i {
+  color: var(--primary-color);
+}
+
+.listContainer li p {
+  margin-left: 2rem;
+}
+
+@media (min-width: 768px) {
+  
+}
+@media (min-width: 1200px) {
+  .iconsContainer {
+  }
+  .listContainer {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

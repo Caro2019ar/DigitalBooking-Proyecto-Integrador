@@ -1,0 +1,259 @@
+.form {
+  align-items: center;
+  background-color: var(--background-gray);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding: 2rem 10%;
+  width: 100%;
+  flex-grow: 1;
+  justify-content: center;
+  position: relative; /* Para usar 'position: absolute' en los mensajes de success/fail */
+}
+
+.form form {
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 0.5rem;
+  position: relative; /* Para acomodar el ojo del password */
+}
+
+.formGroup label p {
+  font-weight: 500;
+  color: var(--secondary-color);
+  font-size: 0.75rem;
+}
+
+.formSubGroup {
+  margin-top: 0.5rem;
+}
+
+.formControl {
+  background-color: #ffffff;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.15);
+  box-sizing: border-box;
+  border: var(--gray);
+  border-radius: 5px;
+  margin: 8px 0;
+  padding: 12px 20px;
+  width: 100%;
+  font-size: 0.75rem;
+  border: 1px solid transparent;
+}
+
+.form h1 {
+  color: var(--primary-color);
+  font-style: normal;
+  font-weight: bold;
+  line-height: 28px;
+  text-align: center;
+  margin-bottom: 1em;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+.formGroup input[type="text"]:focus,
+.formGroup input[type="password"]:focus,
+.formGroup input[type="email"]:focus {
+  outline: none;
+  border: 1px solid rgb(179, 179, 179);
+}
+
+.formGroup input[type="password"] {
+  font-family: Verdana;
+}
+
+.errorMsg,
+.errorCredentialsMsg {
+  color: var(--red);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.75rem;
+  line-height: 14px;
+  text-align: right;
+}
+
+.errorCredentialsMsg {
+  text-align: center;
+  padding: 2em 0;
+  line-height: 1.3em;
+}
+
+.errorRegistroMsg {
+  text-align: center;
+  padding-top: 3em;
+  line-height: 1.5rem;
+  white-space: pre-wrap; /* El pre es para que tenga en cuenta los '\n' en el string */
+}
+
+.errorBookingMsg {
+  color: var(--red);
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 0.8em;
+}
+
+.inputError,
+.inputError > div,
+.boxError .inputError {
+  border: 1px solid #ff0000;
+  background-color: #ffe1e1;
+}
+
+.btnContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.buttonForm {
+  margin-top: 3em;
+  cursor: pointer;
+}
+
+.signInLink {
+  display: flex;
+  gap: 0.5em;
+  margin-top: 0.6rem;
+  font-size: 0.75rem;
+}
+
+.signInLink a {
+  color: blue;
+  text-decoration: none;
+}
+
+.iconoOjoNormal,
+.iconoOjoTachado {
+  color: var(--secondary-light);
+  font-size: 1rem;
+  cursor: pointer;
+  position: absolute;
+  align-self: flex-end;
+  right: 4%;
+  top: 2.08rem;
+  /* padding: 0.2rem; */
+}
+
+.achicarTamanioPuntitos {
+  font-size: 0.72rem; /* Necesario para que el input no se agrande/achique por 1px al togglear el ojo */
+}
+
+.success-message,
+.fail-message {
+  background-color: #d1e7dd;
+  width: 100%;
+  margin-bottom: 3rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.succcess-message {
+  background-color: #d1e7dd;
+}
+
+.fail-message {
+  background-color: #f8d7da;
+}
+
+.success-texto,
+.fail-texto {
+  font-size: 0.875rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  white-space: pre-wrap;
+}
+
+.success-texto {
+  color: #0f5132;
+}
+
+.fail-texto {
+  color: #842029;
+}
+
+.success-icono,
+.fail-icono {
+  font-size: 1.5rem;
+}
+
+.success-icono {
+  color: #0f5132;
+}
+
+.fail-icono {
+  color: #842029;
+}
+
+.hide {
+  display: none;
+}
+
+/*.errorReservaMsg {
+	display: flex;
+	background-color: red;
+	opacity: 60%;
+	position: absolute;
+	top: 80px;
+	width: 100%;
+	justify-content: center;
+	align-content: center;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	color: white;
+}*/
+
+/* Tablet */
+
+@media (min-width: 768px) {
+  .form form {
+    width: 70%;
+  }
+
+  .success-message,
+  .fail-message {
+    width: 56%; /* Sale de (100% - 20% (padding de .form)) * 70% (width de .form form) --Para obtener el mismo ancho que los input-- */
+    position: absolute;
+    top: 4vh;
+  }
+}
+
+/* Desktop */
+
+@media (min-width: 1200px) {
+  .form form {
+    width: 40%;
+  }
+
+  .formGroup {
+    justify-content: space-between;
+  }
+
+  .inputDesktopGroup {
+    flex-direction: row;
+    grid-gap: 1rem;
+  }
+
+  .formSubGroup {
+    width: 50%;
+  }
+
+  .success-message,
+  .fail-message {
+    width: 32%; /* Sale de (100% - 20% (padding de .form)) * 40% (width de .form form) --Para obtener el mismo ancho que los input-- */
+  }
+}

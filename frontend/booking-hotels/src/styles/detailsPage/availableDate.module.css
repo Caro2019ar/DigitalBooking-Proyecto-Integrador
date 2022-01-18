@@ -1,0 +1,110 @@
+.notAvailableDay {
+  color: rgba(256, 0, 0, 0.4);
+}
+
+.availableDate {
+  display: grid;
+  background: var(--background-gray);
+  width: 100%;
+  padding: 0 1rem;
+  position: relative;
+  padding-bottom: 2rem;
+}
+.availableDate > div {
+  width: 100%;
+  margin: auto;
+  max-width: 500px;
+}
+.title {
+  margin-top: 30px;
+  color: var(--secondary-color);
+}
+.startBooking {
+  display: grid;
+}
+.text {
+  font-weight: bold;
+  margin: 20px 0;
+  color: var(--secondary-color);
+}
+.button {
+  background: var(--primary-color);
+  margin-bottom: 25px;
+  box-shadow: 1px 1px 3px gray;
+}
+.button:hover {
+  background: var(--btn-hover);
+  text-shadow: 0 0 4px var(--shadow-primary-color);
+}
+.button:active {
+  background: var(--btn-active);
+}
+
+.button a {
+  padding: 8px 38%;
+}
+/** *************** formato tablet ****************** **/
+
+@media (min-width: 768px) {
+  .availableDate {
+    grid-template-columns: 1fr 1fr;
+    padding: 0 1.3rem;
+    padding-bottom: 1rem;
+  }
+  .availableDate > div {
+    max-width: 1000px;
+    margin: auto;
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
+  .startBooking {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+  .title {
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
+  .text {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  button.button {
+    margin-bottom: 0;
+  }
+}
+/** *************** formato desktop ****************** **/
+
+@media (min-width: 1200px) {
+  .availableDate {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1rem;
+    padding: 0 3rem;
+  }
+  .availableDate > div {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .availableDate .startBooking {
+    grid-column-start: -2;
+    grid-column-end: -1;
+  }
+  .availableDate .startBooking {
+    grid-template-columns: 1fr;
+    background: var(--white);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 5px gray;
+    max-width: 500px;
+    margin-right: 5rem;
+  }
+  .title {
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
+  .text {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+}

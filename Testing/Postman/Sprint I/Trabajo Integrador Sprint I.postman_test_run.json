@@ -1,0 +1,300 @@
+{
+	"id": "8eec0ca3-93db-4ef0-879a-8c5631b74d94",
+	"name": "Trabajo Integrador",
+	"timestamp": "2021-10-27T04:35:08.115Z",
+	"collection_id": "16607330-47e46680-e8bb-461e-a520-20f50f5c46d1",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 22,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "9d74ec31-b71a-4fcf-9ef4-16b789c78c3f",
+			"name": "POST",
+			"url": "http://localhost:8080/categorias",
+			"time": 171,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code igual a 201": true,
+				"Body no vacío": true,
+				"Categoría con los atributos esperados": true,
+				"El ID obtenido es un número válido": true
+			},
+			"testPassFailCounts": {
+				"Status code igual a 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body no vacío": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Categoría con los atributos esperados": {
+					"pass": 1,
+					"fail": 0
+				},
+				"El ID obtenido es un número válido": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				171
+			],
+			"allTests": [
+				{
+					"Status code igual a 201": true,
+					"Body no vacío": true,
+					"Categoría con los atributos esperados": true,
+					"El ID obtenido es un número válido": true
+				}
+			]
+		},
+		{
+			"id": "5ab80a4e-7cf4-42ce-837c-38a8dfb09a46",
+			"name": "GET ONE",
+			"url": "http://localhost:8080/categorias/1",
+			"time": 24,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code igual a 200": true,
+				"Body no vacío": true,
+				"Categoría con los atributos esperados": true,
+				"El ID obtenido es igual a 1": true
+			},
+			"testPassFailCounts": {
+				"Status code igual a 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body no vacío": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Categoría con los atributos esperados": {
+					"pass": 1,
+					"fail": 0
+				},
+				"El ID obtenido es igual a 1": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				24
+			],
+			"allTests": [
+				{
+					"Status code igual a 200": true,
+					"Body no vacío": true,
+					"Categoría con los atributos esperados": true,
+					"El ID obtenido es igual a 1": true
+				}
+			]
+		},
+		{
+			"id": "74ebd152-76b1-43ed-b04a-126cef2f9047",
+			"name": "GET ONE Inexistente",
+			"url": "http://localhost:8080/categorias/9999",
+			"time": 8,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Status code igual a 404": true,
+				"Body no vacío": true,
+				"Body con texto 'no existe'": true
+			},
+			"testPassFailCounts": {
+				"Status code igual a 404": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body no vacío": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body con texto 'no existe'": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				8
+			],
+			"allTests": [
+				{
+					"Status code igual a 404": true,
+					"Body no vacío": true,
+					"Body con texto 'no existe'": true
+				}
+			]
+		},
+		{
+			"id": "64bdffa5-ff04-4677-8e8e-28336c444009",
+			"name": "GET ALL",
+			"url": "http://localhost:8080/categorias",
+			"time": 13,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code igual a 200": true,
+				"Body no vacío": true,
+				"Categorías con los atributos esperados": true,
+				"Body con al menos 3 categorías": true
+			},
+			"testPassFailCounts": {
+				"Status code igual a 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body no vacío": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Categorías con los atributos esperados": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body con al menos 3 categorías": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				13
+			],
+			"allTests": [
+				{
+					"Status code igual a 200": true,
+					"Body no vacío": true,
+					"Categorías con los atributos esperados": true,
+					"Body con al menos 3 categorías": true
+				}
+			]
+		},
+		{
+			"id": "1999aeca-da4d-4e4c-a3e4-4d1e360679a3",
+			"name": "PUT",
+			"url": "http://localhost:8080/categorias",
+			"time": 14,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code igual a 200": true,
+				"Body no vacío": true,
+				"Categoría con los atributos esperados": true,
+				"El ID obtenido es igual a 1": true
+			},
+			"testPassFailCounts": {
+				"Status code igual a 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body no vacío": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Categoría con los atributos esperados": {
+					"pass": 1,
+					"fail": 0
+				},
+				"El ID obtenido es igual a 1": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				14
+			],
+			"allTests": [
+				{
+					"Status code igual a 200": true,
+					"Body no vacío": true,
+					"Categoría con los atributos esperados": true,
+					"El ID obtenido es igual a 1": true
+				}
+			]
+		},
+		{
+			"id": "0bee41a4-70fa-4423-86d1-9807583639ee",
+			"name": "DELETE",
+			"url": "http://localhost:8080/categorias/3",
+			"time": 14,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code igual a 200": true,
+				"Body no vacío": true,
+				"Body con texto 'eliminada'": true
+			},
+			"testPassFailCounts": {
+				"Status code igual a 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body no vacío": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body con texto 'eliminada'": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				14
+			],
+			"allTests": [
+				{
+					"Status code igual a 200": true,
+					"Body no vacío": true,
+					"Body con texto 'eliminada'": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 244,
+	"collection": {
+		"requests": [
+			{
+				"id": "9d74ec31-b71a-4fcf-9ef4-16b789c78c3f",
+				"method": "POST"
+			},
+			{
+				"id": "5ab80a4e-7cf4-42ce-837c-38a8dfb09a46",
+				"method": "GET"
+			},
+			{
+				"id": "74ebd152-76b1-43ed-b04a-126cef2f9047",
+				"method": "GET"
+			},
+			{
+				"id": "64bdffa5-ff04-4677-8e8e-28336c444009",
+				"method": "GET"
+			},
+			{
+				"id": "1999aeca-da4d-4e4c-a3e4-4d1e360679a3",
+				"method": "PUT"
+			},
+			{
+				"id": "0bee41a4-70fa-4423-86d1-9807583639ee",
+				"method": "DELETE"
+			}
+		]
+	}
+}

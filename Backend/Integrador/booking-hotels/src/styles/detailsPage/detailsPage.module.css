@@ -1,0 +1,15 @@
+/* Tablet */
+
+@media (min-width: 768px) {
+  .detailsPageContainer {
+    padding: 0 1.4rem;
+  }
+}
+
+/* Desktop */
+
+@media (min-width: 1200px) {
+  .detailsPageContainer {
+    padding: 0 3rem;
+  }
+}

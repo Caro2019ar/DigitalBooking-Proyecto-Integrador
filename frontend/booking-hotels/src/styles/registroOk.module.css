@@ -1,0 +1,64 @@
+.container {
+    background-color: var(--background-gray);
+    width: 100%;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.box {
+    background: var(--white);
+    box-shadow: 0 4px 4px var(--gray);
+    border-radius: 8px;
+    max-width: 640px;
+    text-align: center;
+    padding: 3rem 2rem;
+    font-size: 1.3rem;
+}
+
+.icon {
+    color: var(--primary-color);
+    font-size: 5rem;
+    padding-bottom: 1.5rem;
+}
+
+.titulo {
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+}
+
+.mensaje {
+    margin-bottom: 1rem;
+}
+
+.button {
+    display: inline-block;
+    width: 225px;
+    background: var(--primary-color);
+    padding: 12px 0px;
+    margin-top: 1rem;
+}
+  
+
+/* Tablet */
+
+@media (min-width: 768px) {
+
+    .box {
+      padding-left: 4rem;
+      padding-right: 4rem;
+    }
+}
+
+
+/* Desktop */
+
+@media (min-width: 1200px) {
+
+    .button {
+        font-size: 1.25rem;
+    }
+
+}

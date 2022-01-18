@@ -1,0 +1,82 @@
+{
+	"name": "booking-hotels",
+	"homepage": "http://3.81.230.219/",
+	"version": "0.1.0",
+	"private": true,
+	"dependencies": {
+		"-": "^0.0.1",
+		"@fortawesome/fontawesome-free": "^5.15.4",
+		"@fortawesome/fontawesome-svg-core": "^1.2.36",
+		"@fortawesome/free-brands-svg-icons": "^5.15.4",
+		"@fortawesome/free-regular-svg-icons": "^5.15.4",
+		"@fortawesome/free-solid-svg-icons": "^5.15.4",
+		"@fortawesome/react-fontawesome": "^0.1.16",
+		"@react-google-maps/api": "^2.7.0",
+		"@testing-library/dom": "^8.11.1",
+		"@testing-library/jest-dom": "^5.14.1",
+		"@testing-library/react": "^11.2.7",
+		"@testing-library/user-event": "^12.8.3",
+		"axios": "^0.24.0",
+		"date-fns": "^2.25.0",
+		"jsonwebtoken": "^8.5.1",
+		"prop-types": "^15.7.2",
+		"react": "^17.0.2",
+		"react-dom": "^17.0.2",
+		"react-modern-calendar-datepicker": "^3.1.6",
+		"react-router-hash-link": "^2.4.3",
+		"react-scripts": "^4.0.3",
+		"react-select": "^5.1.0",
+		"react-share": "^4.4.0",
+		"react-transition-group": "^4.4.2",
+		"react-window": "^1.8.6",
+		"sweetalert2": "^11.2.1",
+		"web-vitals": "^1.1.2"
+	},
+	"scripts": {
+		"start": "react-scripts start",
+		"build": "react-scripts build",
+		"test": "react-scripts test",
+		"test-nowatch": "react-scripts test --watchAll=false",
+		"eject": "react-scripts eject",
+		"coverage": "react-scripts test --env=jsdom --watchAll=false --coverage"
+	},
+	"eslintConfig": {
+		"extends": [
+			"react-app",
+			"react-app/jest"
+		]
+	},
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	},
+	"devDependencies": {
+		"@fortawesome/fontawesome-free": "^5.15.4",
+		"@wojtekmaj/enzyme-adapter-react-17": "^0.6.5",
+		"enzyme": "^3.11.0",
+		"react-datepicker": "^4.3.0",
+		"react-image-gallery": "^1.2.7",
+		"react-router-dom": "^5.3.0"
+	},
+	"jest": {
+		"collectCoverageFrom": [
+			"src/**/*.{js,jsx}",
+			"!src/index.js",
+			"!src/dataProducts.js",
+			"!src/dataBase.js",
+			"!src/dataCountries.js",
+			"!src/tokenUtils.js",
+			"!src/component/Apitest.jsx",
+			"!src/hooks/useOnlyNumber.jsx",
+			"!src/Service/Caracteristicas.jsx"
+		]
+	}
+}

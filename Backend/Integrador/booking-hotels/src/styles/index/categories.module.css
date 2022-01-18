@@ -1,0 +1,109 @@
+.category {
+    padding-top: 10%;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: initial;
+    justify-content: flex-start;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}    
+
+.category h2  {
+    margin: 0 0 9px 2.9%; 
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+.typeContainer {
+    margin: 0 2.95% 0 2.95%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10%;
+}
+
+.typeCard {
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 11px;
+    width: 100%;
+    margin-bottom: 8%;
+    padding: 0 0 1em 0;
+}
+.typeCard a {
+    height: 213px;
+    width: 100%;
+}
+.typeCard a img {
+    height: 100%;
+    width: inherit;
+   
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.typeCard h3, .typeCard p {
+    margin: 0%;
+    margin-left: 3.5%;
+    
+}
+.typeCard h3 {
+    margin-top: 5px;
+    color: var(--secondary-color);
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.typeCard p{
+    color: var(--gray);
+}
+
+@media (min-width: 768px) { 
+
+    .typeCard {
+        width: 47%;
+        margin-bottom: 3%;
+    }
+
+    .typeContainer {
+        margin: 0 ;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .category {
+        padding-top: 3%;
+    }
+}
+
+@media (min-width: 1200px) {
+    
+    .typeContainer {
+        flex-wrap:nowrap;
+        margin-left: 3%;
+        margin-right: 2%;
+    }
+
+    .typeCard {
+        width: 100%;
+        padding: 0 0 0.5em 0;
+        margin: 0.5%;
+    }
+
+    .typeCard h3 {
+        padding-top: 1%;
+    }
+
+    .typeCard a {
+        height: 280px;
+        width: 100%;
+    }
+}

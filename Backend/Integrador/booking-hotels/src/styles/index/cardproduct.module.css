@@ -1,0 +1,251 @@
+.productsCardContainer {
+  background-color: #e5e5e5;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+}
+
+.productsCardContainer > h2 {
+  margin: 0 0 9px 2.9%;
+  font-weight: bold;
+}
+
+.productsCardContainer > h2,
+.cardText,
+.scoreResultsContainer > h4,
+.headerIcon {
+  color: var(--secondary-color);
+}
+
+.cardContainer {
+  margin: 0 2.95% 0 2.95%;
+  display: flex;
+  grid-gap: 2em;
+  flex-direction: column;
+  border-radius: 10%;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 11px;
+  width: 100%;
+  flex-direction: column;
+  background-color: var(--white);
+}
+
+.cardImage {
+  width: 100%;
+  height: 230px;
+}
+
+.cardImage a img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.iconContainer {
+  position: absolute;
+  right: 6%;
+  margin: 12px 0;
+  font-size: 1.3rem;
+}
+
+.faHeart {
+  color: white;
+}
+.faHeartPressed {
+  color: red;
+}
+.cardText {
+  display: flex;
+  padding: 1em;
+  width: 100%;
+  font-size: 1.2rem;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cardText p {
+  font-size: 0.75rem;
+}
+
+.cardText h4 {
+  color: var(--gray);
+  font: 1rem Quicksand;
+  font-weight: 600;
+}
+
+.reviewContainer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.scoreTitleContainer {
+  width: 70%;
+}
+
+.scoreContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+.scoreContainer,
+.locationContainer {
+  gap: 0.5rem;
+}
+.scoreContainer ul {
+  list-style-type: none;
+}
+.starContainer {
+  display: flex;
+}
+.starIcon {
+  color: var(--primary-color);
+  font-size: 0.8rem;
+}
+
+.scoreResultsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 30%;
+}
+
+.scoreResultsContainer span {
+  height: 30px;
+  width: 40px;
+  color: var(--white);
+  background: var(--secondary-light);
+  border-radius: 0.6rem;
+  font-weight: bold;
+  line-height: 30px;
+}
+.scoreResultsContainer p {
+  font-size: 1.3rem;
+  height: 30px;
+  text-align: center;
+}
+.scoreResultsContainer h3 {
+  font: 0.86rem Roboto;
+  font-weight: 700;
+}
+
+.locationContainer {
+  display: flex;
+  align-items: center;
+}
+
+.locationContainer p{
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.locationContainer a p,
+.descriptionContainer p {
+  font-weight: 500;
+  line-height: 1rem;
+}
+.locationContainer a p {
+  margin: 0.5rem 0;
+  
+}
+
+.descriptionContainer p {
+  margin-top: 1rem;
+}
+.headerIcon {
+  font-size: 1rem;
+}
+
+.featuresIcon {
+  display: none;
+}
+
+.locationContainer span a p {
+  color: var(--primary-color);
+}
+
+.cardProductButtonContainer {
+  margin-top: 1rem;
+}
+
+/* Tablets */
+
+@media (min-width: 768px) {
+  .card {
+    flex-direction: row;
+    height: 280px;
+  }
+
+  .cardImage {
+    height: auto;
+  }
+
+  .cardImage a img {
+    border-radius: 10px 0 0 10px;
+  }
+  .iconContainer {
+    left: 44%;
+  }
+  .scoreResultsContainer h4 {
+    font-size: 0.8rem;
+  }
+
+  .featuresIcon {
+    display: initial;
+  }
+  .featuresIcon ul {
+    list-style-type: none;
+  }
+  .listContainer {
+    display: flex;
+    color: var(--secondary-color);
+    gap: 0.5rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* Desktop */
+
+@media (min-width: 1200px) {
+  .productsCardContainer {
+    padding-top: 2rem;
+  }
+  
+  .cardContainer {
+    flex-direction: row;
+    grid-gap: 1em;
+    justify-content: space-around;
+  }
+
+  .card {
+    width: 48%;
+  }
+
+  .cardImage {
+    width: 50%;
+  }
+
+  .cardText {
+    padding: 1em;
+    width: 50%;
+  }
+  .cardText h4 {
+    width: min-content;
+  }
+  .scoreContainer{
+    width: inherit;
+  }
+  .scoreContainer ul{
+    width: fit-content;
+  }
+  .iconContainer {
+    right: 0%;
+    left: 0;
+  }
+}

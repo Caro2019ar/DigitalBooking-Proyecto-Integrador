@@ -1,0 +1,76 @@
+.container {
+  background-color: var(--background-gray);
+  color: var(--secondary-light);
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+}
+
+.textLocationContainer,
+.reviewContainer {
+  display: flex;
+  width: 50%;
+}
+.textLocationContainer {
+  grid-gap: 0.4rem;
+}
+.textBox h4:last-child {
+  display: none;
+}
+.reviewContainer {
+  justify-content: flex-end;
+  align-items: center;
+  grid-gap: 1rem;
+}
+.scoreContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.scoreContainer ul {
+  list-style-type: none;
+}
+.reviewContainer span {
+  height: 40px;
+  width: 40px;
+  color: var(--white);
+  background: var(--secondary-light);
+  border-radius: 0.6rem;
+  font-weight: bold;
+  text-align: center;
+  line-height: 40px;
+  font-size: 1.3rem;
+}
+.starContainer {
+  display: flex;
+}
+.starIcon {
+  color: var(--white);
+}
+
+/* Tablet */
+
+@media (min-width: 768px) {
+  .container {
+    padding: 1rem 1.4rem;
+    align-items: flex-start;
+  }
+}
+
+/* Desktop */
+
+@media (min-width: 1200px) {
+  .container {
+    padding: 1rem 3rem;
+  }
+  .textLocationContainer h4 {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  .scoreContainer h4 {
+    font-weight: 700;
+  }
+  .textBox h4:last-child {
+    display: initial;
+  }
+}

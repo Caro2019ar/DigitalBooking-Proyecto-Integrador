@@ -1,0 +1,16 @@
+INSERT INTO `digital_booking_db`.`caracteristicas`(Nombre, Icono) VALUES('WiFi', 'fas fa-wifi');
+INSERT INTO `digital_booking_db`.`caracteristicas`(Nombre, Icono) VALUES('Piscina', 'fas fa-swimmer');
+INSERT INTO `digital_booking_db`.`caracteristicas`(Nombre, Icono) VALUES('Futbol', 'fas fa-futbol');
+INSERT INTO `digital_booking_db`.`caracteristicas`(Nombre, Icono) VALUES('Basquet', 'fas fa-basketball-ball');
+INSERT INTO `digital_booking_db`.`caracteristicas`(Nombre, Icono) VALUES('Tenis de mesa', 'fas fa-table-tennis');
+INSERT INTO `digital_booking_db`.`caracteristicas`(Nombre, Icono) VALUES('Gimnasio', 'fas fa-dumbbell');
+INSERT INTO `digital_booking_db`.`caracteristicas`(Nombre, Icono) VALUES('Spa', 'fas fa-spa');
+INSERT INTO `digital_booking_db`.`caracteristicas`(Nombre, Icono) VALUES('Sauna', 'fas fa-hot-tub');
+INSERT INTO `digital_booking_db`.`caracteristicas`(Nombre, Icono) VALUES('Bar', 'fas fa-glass-martini-alt');
+INSERT INTO `digital_booking_db`.`caracteristicas`(Nombre, Icono) VALUES('Desayuno', 'fas fa-coffee');
+INSERT INTO `digital_booking_db`.`caracteristicas`(Nombre, Icono) VALUES('Iglesia', 'fas fa-church');
+INSERT INTO `digital_booking_db`.`caracteristicas`(Nombre, Icono) VALUES('Playroom', 'fas fa-play-circle');
+INSERT INTO `digital_booking_db`.`caracteristicas`(Nombre, Icono) VALUES('Room Service', 'fas fa-concierge-bell');
+INSERT INTO `digital_booking_db`.`caracteristicas`(Nombre, Icono) VALUES('Televisión', 'fas fa-tv');
+INSERT INTO `digital_booking_db`.`caracteristicas`(Nombre, Icono) VALUES('Transporte', 'fas fa-shuttle-van');
+INSERT INTO `digital_booking_db`.`caracteristicas`(Nombre, Icono) VALUES('Jacuzzi', 'fas fa-hot-tub');

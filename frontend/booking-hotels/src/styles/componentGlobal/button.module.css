@@ -1,0 +1,27 @@
+button,
+.button {
+  border-radius: 5px;
+  padding: 8px 0;
+  width: 150px;
+  border: 1px solid #1dbeb4;
+  font-weight: bold;
+  transition: 0.3s ease-in-out;
+}
+button.button:hover,
+.button:hover {
+  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
+  background: var(--btn-hover);
+  text-shadow: 0 0 4px var(--shadow-primary-color);
+}
+button.button:active,
+.button:active {
+  background: var(--btn-active);
+}
+button:a .button:hover .btnUnstyled {
+  background-color: transparent;
+  border-radius: 0;
+  padding: 0;
+  width: 100%;
+  border: none;
+  font-weight: 500;
+}
